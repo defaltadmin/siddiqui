@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mohammed Ahmed Siddiqui · BIO-key, Saudi Arabia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --paper:#EDE6D8;--card:#F7F2E8;--ink:#1F1B16;--mut:#544C42;--faint:#8C8478;--rule:#D3C8B4;
+ --acc:#0D6A4C;--acc-soft:#D2E0D0;--hot:#BB4C26;--hot-soft:#F1DACB;--blue:#2F5596;--amber:#8E5C08;--bar:#4A443B;
+ --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+ --sans:"Inter Tight",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+ --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+ --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--paper);scroll-behavior:smooth;scroll-snap-type:y proximity}
+body{font-family:var(--sans);font-size:18px;line-height:1.5;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--acc);text-underline-offset:3px}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--hot);outline-offset:3px;border-radius:6px}
+::selection{background:var(--acc-soft)}
+
+/* chrome */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:16px clamp(18px,4vw,48px);background:linear-gradient(var(--paper) 60%,rgba(237,230,216,0));pointer-events:none}
+.topbar>*{pointer-events:auto}
+.brand{font-family:var(--serif);font-size:1.4rem;letter-spacing:-.01em}
+.where{font-family:var(--mono);font-size:.88rem;color:var(--mut);display:flex;gap:10px;align-items:center}
+.where b{color:var(--ink);font-weight:500}
+.where .pbar{display:inline-block;width:120px;height:3px;background:var(--rule);position:relative;overflow:hidden;border-radius:2px}
+.where .pbar i{position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--acc);transform-origin:left;transform:scaleX(0);transition:transform .7s var(--ease)}
+.for{font-family:var(--mono);font-size:.84rem;color:var(--mut)}
+@media(max-width:760px){.for,.where .pbar{display:none}}
+.rail{position:fixed;right:clamp(10px,1.6vw,22px);top:50%;transform:translateY(-50%);z-index:30;display:flex;flex-direction:column;gap:6px}
+.rail button{display:flex;align-items:center;justify-content:flex-end;gap:10px;background:none;border:0;cursor:pointer;padding:3px 0}
+.rail span{font-family:var(--mono);font-size:.76rem;color:var(--mut);opacity:0;transform:translateX(6px);transition:opacity .35s var(--ease),transform .35s var(--ease);white-space:nowrap}
+.rail i{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--faint);transition:all .35s var(--ease)}
+.rail button:hover span,.rail button[aria-current=true] span{opacity:1;transform:none}
+.rail button[aria-current=true] i{background:var(--acc);border-color:var(--acc);transform:scale(1.25)}
+.rail button[aria-current=true] span{color:var(--ink)}
+@media(max-width:900px){.rail{display:none}}
+.ctrl{position:fixed;left:clamp(18px,4vw,48px);bottom:16px;z-index:30;display:flex;gap:6px;align-items:center;font-family:var(--mono);font-size:.8rem;color:var(--mut);background:var(--paper);padding:4px 10px 4px 4px;border-radius:99px}
+.ctrl button{background:var(--card);border:1px solid var(--rule);border-radius:99px;padding:6px 12px;cursor:pointer;transition:transform .3s var(--ease),border-color .2s}
+.ctrl button:hover{border-color:var(--ink);transform:translateY(-2px)}
+.ctrl button[aria-pressed=true]{background:var(--hot);color:var(--card);border-color:var(--hot)}
+.ctrl .k{margin-left:8px}
+@media(max-width:760px){.ctrl .k,.ctrl .opt{display:none}}
+#laser{position:fixed;left:0;top:0;width:22px;height:22px;margin:-11px 0 0 -11px;border-radius:50%;background:rgba(187,76,38,.92);box-shadow:0 0 0 6px rgba(187,76,38,.2),0 0 24px rgba(187,76,38,.55);pointer-events:none;z-index:50;display:none;will-change:transform}
+body.laser #laser{display:block}
+body.laser{cursor:none}
+.ripple{position:fixed;width:16px;height:16px;margin:-8px 0 0 -8px;border:2px solid var(--hot);border-radius:50%;pointer-events:none;z-index:49;animation:rip .7s var(--ease) forwards}
+@keyframes rip{to{transform:scale(5);opacity:0}}
+
+/* layout */
+section{min-height:100vh;scroll-snap-align:start;display:flex;align-items:center;padding:96px clamp(20px,6vw,96px) 84px;position:relative}
+.wrap{width:100%;max-width:1240px;margin:0 auto;transform-origin:center center}
+@media(min-width:900px) and (min-height:600px){
+ html{scroll-snap-type:y mandatory}
+ section{height:100vh;min-height:0;overflow:hidden;padding:78px clamp(48px,6vw,110px) 66px}
+}
+.sh{display:flex;align-items:baseline;gap:14px;font-family:var(--mono);font-size:.86rem;color:var(--mut);margin-bottom:16px;text-transform:uppercase;letter-spacing:.1em}
+.sh .no{color:var(--acc);font-weight:500}
+.sh .ln{flex:0 0 60px;height:1px;background:var(--rule);transform-origin:left}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(3.4rem,9vw,8.2rem);line-height:.92;letter-spacing:-.025em}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,4.4vw,4rem);line-height:1.02;letter-spacing:-.02em;max-width:22ch}
+h2 em,h1 em{font-style:italic;color:var(--acc)}
+h3{font-size:1.08rem;font-weight:600;letter-spacing:-.01em}
+.lede{font-size:clamp(1.05rem,1.4vw,1.22rem);color:var(--mut);max-width:58ch;margin-top:12px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:22px}
+.mono{font-family:var(--mono);font-size:.84rem;color:var(--mut);letter-spacing:.01em}
+.tag{display:inline-block;font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:2px 9px;border-radius:99px;border:1px solid currentColor;white-space:nowrap;vertical-align:middle}
+.t-source{color:var(--acc)}.t-claim{color:var(--amber)}.t-inference{color:var(--blue)}.t-verify{color:var(--hot)}.t-cv{color:var(--ink)}
+.grid{display:grid;gap:16px}
+.mt{margin-top:26px}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--sans);fill:var(--ink)}
+svg .m{font-family:var(--mono);fill:var(--mut);font-size:12px}
+
+/* motion */
+.r{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform 1s var(--ease);transition-delay:calc(var(--d,0) * 75ms)}
+.in .r{opacity:1;transform:none}
+.in .sh .ln{animation:ln 1s var(--ease) both}
+@keyframes ln{from{transform:scaleX(0)}}
+.gx{transform:scaleX(0);transform-box:fill-box;transform-origin:left center;transition:transform 1.1s var(--ease);transition-delay:calc(var(--d,0) * 70ms + 250ms)}
+.gy{transform:scaleY(0);transform-box:fill-box;transform-origin:center bottom;transition:transform 1.2s var(--ease);transition-delay:calc(var(--d,0) * 120ms + 250ms)}
+.in .gx,.in .gy{transform:none}
+.pop{opacity:0;transform:scale(.3);transform-box:fill-box;transform-origin:center;transition:opacity .5s ease,transform .8s var(--ease);transition-delay:calc(var(--d,0) * 60ms + 200ms)}
+.in .pop{opacity:1;transform:none}
+.drw{stroke-dasharray:100;stroke-dashoffset:100;transition:stroke-dashoffset 1.6s var(--ease);transition-delay:calc(var(--d,0) * 60ms + 150ms)}
+.in .drw{stroke-dashoffset:var(--to,0)}
+.swap{animation:sw .45s var(--ease)}
+@keyframes sw{from{opacity:0;transform:translateY(6px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.r,.gx,.gy,.pop,.drw{transition:none!important}.r,.pop{opacity:1;transform:none}.gx,.gy{transform:none}.drw{stroke-dashoffset:var(--to,0)}.flow i,.swap{animation:none!important}}
+
+/* hero */
+.hero .kick{font-family:var(--mono);font-size:.88rem;color:var(--mut);letter-spacing:.06em;text-transform:uppercase}
+.hero h1{margin-top:20px}
+.hero .say{font-family:var(--serif);font-style:italic;font-size:clamp(1.5rem,2.5vw,2.1rem);line-height:1.2;margin-top:24px;max-width:32ch}
+.hero .facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px;font-family:var(--mono);font-size:.88rem;color:var(--mut)}
+.hero .facts span::before{content:"— ";color:var(--acc)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1.5px solid var(--ink);margin-top:40px}
+.stat{padding:18px 18px 4px 0;border-right:1px solid var(--rule)}
+.stat:last-child{border-right:0}
+.stat+.stat{padding-left:18px}
+.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,4.2vw,3.7rem);line-height:1;letter-spacing:-.02em}
+.stat span{display:block;font-size:.95rem;color:var(--mut);margin-top:8px;max-width:22ch}
+@media(max-width:760px){.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(3){padding-left:0}}
+.hfoot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:28px}
+.toc{display:flex;flex-wrap:wrap;gap:8px}
+.toc button{background:none;border:1px solid var(--rule);border-radius:99px;padding:6px 14px;font-size:.92rem;cursor:pointer;transition:border-color .3s,color .3s,transform .3s var(--ease)}
+.toc button:hover{border-color:var(--acc);color:var(--acc);transform:translateY(-2px)}
+.toc button b{font-family:var(--mono);font-weight:400;color:var(--acc);margin-right:6px;font-size:.8rem}
+.stop{font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--mut)}
+.stop::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--acc);margin-right:10px;vertical-align:middle;animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25}}
+
+/* brief */
+.brief{grid-template-columns:repeat(3,1fr);margin-top:36px}
+.brief .card{padding:30px;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.brief .card:hover{transform:translateY(-6px);box-shadow:0 22px 40px -28px rgba(31,27,22,.4)}
+.brief .n{font-family:var(--serif);font-size:3.6rem;line-height:1;color:var(--acc)}
+.brief h3{margin-top:14px;font-size:1.35rem;line-height:1.25}
+.brief p{color:var(--mut);margin-top:10px;font-size:1.02rem}
+@media(max-width:900px){.brief{grid-template-columns:1fr}}
+
+/* career */
+.career{grid-template-columns:1.6fr 1fr;align-items:stretch;margin-top:28px}
+@media(max-width:960px){.career{grid-template-columns:1fr}}
+.role{cursor:pointer}
+.role rect.b{transition:fill .3s}
+.role:hover rect.b{fill:#2E7A5E}
+.role.sel rect.b{fill:var(--acc)}
+.role.sel text.l{font-weight:700}
+.panel{min-height:340px}
+.panel h3{font-size:1.55rem;font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.15}
+.panel ul{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:10px}
+.panel li{padding-left:18px;position:relative;font-size:1rem}
+.panel li::before{content:"";position:absolute;left:0;top:.65em;width:8px;height:2px;background:var(--acc)}
+
+/* record */
+.rec{grid-template-columns:repeat(3,1fr);margin-top:26px}
+.rec .card{display:flex;flex-direction:column;gap:6px}
+.rec .big{font-family:var(--serif);font-size:2.8rem;line-height:1;letter-spacing:-.02em;margin-top:6px}
+.rec .cap{font-size:.95rem;color:var(--mut)}
+@media(max-width:960px){.rec{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.rec{grid-template-columns:1fr}}
+.months{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;margin-top:18px;align-items:end;height:58px}
+.months i{display:block;height:30px;border-radius:3px;background:var(--rule);transform-origin:bottom}
+.months i.best{background:var(--acc);height:56px}
+.in .months i{animation:mb .7s var(--ease) both;animation-delay:calc(var(--d) * 35ms + 300ms)}
+@keyframes mb{from{transform:scaleY(0)}}
+.mlab{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.74rem;color:var(--mut);margin-top:6px}
+
+/* network */
+.netw{grid-template-columns:1.35fr 1fr;align-items:center;margin-top:20px}
+@media(max-width:960px){.netw{grid-template-columns:1fr}}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{background:var(--card);border:1px solid var(--rule);border-radius:99px;padding:7px 15px;cursor:pointer;font-size:.92rem;transition:background .3s,color .3s,border-color .3s}
+.filters button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.nn{transition:opacity .35s}
+.nn circle{transition:transform .4s var(--ease);transform-box:fill-box;transform-origin:center}
+.nn:hover circle{transform:scale(1.5)}
+.nl{stroke:var(--rule);stroke-width:1.2;transition:opacity .35s,stroke .35s}
+.fade{opacity:.12}
+.groups{display:flex;flex-direction:column;gap:14px;margin-top:20px}
+.groups .g{display:flex;align-items:baseline;border-bottom:1px solid var(--rule);padding-bottom:12px;cursor:pointer}
+.groups .g b{font-family:var(--serif);font-size:2.5rem;font-weight:400;line-height:1;margin-right:14px;min-width:64px}
+.groups .g span{color:var(--mut);font-size:.95rem}
+
+/* market */
+.mkt{grid-template-columns:1fr 1.25fr;margin-top:24px;align-items:start}
+@media(max-width:960px){.mkt{grid-template-columns:1fr}}
+.ctl{display:flex;flex-direction:column}
+.ctl button{display:flex;align-items:center;gap:14px;text-align:left;background:none;border:0;border-bottom:1px solid var(--rule);padding:13px 12px;cursor:pointer;transition:background-color .25s,box-shadow .25s}
+.ctl button:hover{background:rgba(247,242,232,.6)}
+.ctl button[aria-pressed=true]{background:var(--card);box-shadow:inset 4px 0 0 var(--acc)}
+.ctl .code{font-family:var(--mono);font-size:.84rem;color:var(--acc);min-width:110px}
+.ctl .nm{font-size:1rem;flex:1}
+.ctlD{height:268px;overflow:hidden}
+.ctlD h3{font-family:var(--serif);font-weight:400;font-size:2rem;line-height:1.1;margin-top:8px}
+.ctlD .lab{font-family:var(--mono);font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);margin-top:16px}
+.ctlD p{margin-top:4px;font-size:1.02rem}
+.heat{margin-top:14px}
+.heat table{width:100%;border-collapse:collapse;font-size:.95rem}
+.heat th{font-family:var(--mono);font-weight:400;font-size:.76rem;color:var(--mut);text-align:center;padding:6px}
+.heat th:first-child{text-align:left}
+.heat td{padding:8px 6px;border-top:1px solid var(--rule);text-align:center}
+.heat td:first-child{text-align:left}
+.dot{display:inline-block;width:15px;height:15px;border-radius:50%;border:1.5px solid var(--acc);vertical-align:middle}
+.dot.f{background:var(--acc)}.dot.h{background:linear-gradient(90deg,var(--acc) 50%,transparent 50%)}.dot.o{border-color:var(--faint)}
+
+/* bk */
+.bkrow{grid-template-columns:1.25fr 1fr 1fr 1fr;margin-top:16px}
+@media(max-width:960px){.bkrow{grid-template-columns:1fr 1fr}}
+.bkrow .card{padding:16px 18px}
+.bkrow b{display:block;font-family:var(--serif);font-weight:400;font-size:2.2rem;line-height:1.05}
+.bkrow .ds{display:block;font-size:.92rem;color:var(--mut);margin:6px 0 10px}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:.92rem;color:var(--mut);margin-top:8px}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.ev .evn{transition:fill .2s}
+.ev:hover .evn{fill:var(--acc)}
+
+/* fit */
+.fitw{grid-template-columns:1.6fr 1fr;margin-top:22px;align-items:start}
+@media(max-width:960px){.fitw{grid-template-columns:1fr}}
+.fm{width:100%;border-collapse:collapse}
+.fm th{font-family:var(--mono);font-weight:400;font-size:.76rem;color:var(--mut);text-transform:uppercase;letter-spacing:.08em;padding:0 8px 10px;text-align:center}
+.fm th:first-child{text-align:left}
+.fm td{border-top:1px solid var(--rule);padding:10px 8px;vertical-align:middle}
+.fm td.c{text-align:center;width:84px}
+.fm .need{font-size:1rem;font-weight:600}
+.fm .ev2{font-size:.9rem;color:var(--mut);margin-top:2px}
+.fm tr{transition:background-color .25s}
+.fm tr:hover{background:rgba(237,230,216,.6)}
+.fdot{display:inline-block;width:17px;height:17px;border-radius:50%}
+.fdot.d{background:var(--acc)}.fdot.a{background:var(--blue);opacity:.8}.fdot.g{border:2px solid var(--hot);background:var(--hot-soft)}
+.stack{display:flex;height:18px;border-radius:99px;overflow:hidden;margin:14px 0 8px}
+.stack i{display:block;height:100%;transform-origin:left}
+.in .stack i{animation:gxk 1.2s var(--ease) both;animation-delay:calc(var(--d) * 150ms + 300ms)}
+@keyframes gxk{from{transform:scaleX(0)}}
+.gapc{border:1.5px solid var(--hot)}
+.gapc h3{font-family:var(--serif);font-weight:400;font-size:1.8rem;line-height:1.1}
+.gapc ol{margin:14px 0 0 20px;display:flex;flex-direction:column;gap:8px;font-size:1rem}
+
+/* channel */
+.chw{grid-template-columns:1.55fr 1fr;margin-top:22px;align-items:start}
+@media(max-width:960px){.chw{grid-template-columns:1fr}}
+.tier{display:grid;grid-template-columns:128px 1fr;gap:14px;align-items:center}
+.tier .tn{font-family:var(--mono);font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;color:var(--mut)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:8px 13px;font-size:.95rem;cursor:pointer;transition:transform .35s var(--ease),border-color .25s,background-color .25s,color .25s;text-align:left}
+.chip:hover{transform:translateY(-3px);border-color:var(--ink)}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip.k-core{border-color:var(--acc);color:var(--acc);font-weight:600}
+.chip.k-anchor{border-color:var(--acc);box-shadow:inset 0 0 0 1px var(--acc);font-weight:600}
+.chip.k-eval{border-style:dashed;border-color:var(--blue)}
+.chip.k-gap{border-style:dashed;border-color:var(--hot);color:var(--hot)}
+.chip.k-mine::after{content:"●";color:var(--acc);font-size:.6rem;margin-left:6px;vertical-align:middle}
+.chip[aria-pressed=true].k-gap,.chip[aria-pressed=true].k-core{color:var(--paper)}
+.flow{height:24px;margin-left:142px;position:relative;width:2px;background:var(--rule)}
+.flow i{position:absolute;left:-3px;top:0;width:8px;height:8px;border-radius:50%;background:var(--acc);animation:fl 2.4s linear infinite}
+@keyframes fl{from{transform:translateY(-4px);opacity:0}20%{opacity:1}80%{opacity:1}to{transform:translateY(20px);opacity:0}}
+@media(max-width:620px){.tier{grid-template-columns:1fr}.flow{margin-left:10px}}
+.chD{height:250px;overflow:hidden}
+.chD h3{font-family:var(--serif);font-weight:400;font-size:1.9rem;line-height:1.1;margin-top:8px}
+.chD p{margin-top:10px;font-size:1rem}
+.prin{margin-top:14px;padding:16px 18px;border-left:3px solid var(--acc);background:var(--acc-soft);border-radius:0 10px 10px 0;font-size:1rem}
+.keyline{display:flex;flex-wrap:wrap;gap:16px;font-size:.86rem;color:var(--mut);margin-top:18px}
+.keyline span{display:inline-flex;align-items:center;gap:6px}
+.keyline i{display:inline-block;width:18px;height:12px;border-radius:3px}
+
+/* compete */
+.cmpw{grid-template-columns:1.3fr 1fr;margin-top:22px;align-items:center}
+@media(max-width:960px){.cmpw{grid-template-columns:1fr}}
+.cp circle{transition:transform .4s var(--ease);transform-box:fill-box;transform-origin:center}
+.cp:hover circle{transform:scale(1.6)}
+.wl{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.wl li{font-size:1rem;padding-left:22px;position:relative}
+.wl li::before{content:"+";position:absolute;left:0;color:var(--acc);font-weight:700}
+.wl.neg li::before{content:"−";color:var(--hot)}
+
+/* questions */
+.qs{grid-template-columns:1fr 1fr;margin-top:26px;counter-reset:q;column-gap:28px}
+@media(max-width:900px){.qs{grid-template-columns:1fr}}
+.q{padding:18px 20px 18px 66px;position:relative;font-size:1.08rem;border-top:1px solid var(--rule)}
+.q::before{counter-increment:q;content:counter(q,decimal-leading-zero);position:absolute;left:12px;top:14px;font-family:var(--serif);font-size:2.1rem;line-height:1;color:var(--acc)}
+.close{margin-top:36px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px;border-top:1.5px solid var(--ink);padding-top:22px}
+.close .thx{font-family:var(--serif);font-size:clamp(2.2rem,4vw,3.4rem);line-height:1}
+.close .ct{font-family:var(--mono);font-size:.92rem;display:flex;flex-direction:column;gap:4px;text-align:right}
+
+/* sources */
+.srcs{grid-template-columns:repeat(auto-fit,minmax(360px,1fr));margin-top:20px;gap:0 28px}
+.src{border-top:1px solid var(--rule);padding:8px 0;font-size:.9rem;display:grid;grid-template-columns:44px 1fr;gap:6px}
+.src .id{font-family:var(--mono);color:var(--acc);font-size:.8rem;padding-top:2px}
+.src a{display:block;font-family:var(--mono);font-size:.74rem;word-break:break-all;margin-top:2px}
+.disc{margin-top:20px;font-size:.88rem;color:var(--mut);max-width:90ch}
+
+/* print */
+@media print{
+ @page{size:A4 landscape;margin:10mm}
+ .topbar,.rail,.ctrl,#laser{display:none!important}
+ html{scroll-snap-type:none}
+ section{height:auto!important;min-height:auto;overflow:visible!important;break-after:page;padding:10mm 0}
+ .wrap{transform:none!important}
+ .r,.pop{opacity:1!important;transform:none!important}.gx,.gy{transform:none!important}.drw{stroke-dashoffset:var(--to,0)!important}
+ .flow i{display:none}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="brand">M. A. Siddiqui</div>
+ <div class="where" aria-live="polite"><span id="wNo">01</span><b id="wName">Intro</b><span class="pbar"><i id="wBar"></i></span></div>
+ <div class="for">for BIO-key · Oct 2026</div>
+</header>
+<nav class="rail" id="rail" aria-label="Sections"></nav>
+<div class="ctrl" id="ctrl">
+ <button type="button" id="prev" aria-label="Previous section">←</button>
+ <button type="button" id="next" aria-label="Next section">→</button>
+ <button type="button" class="opt" id="laserBtn" aria-pressed="false">Pointer</button>
+ <span class="k">← → move · L pointer</span>
+</div>
+<div id="laser" aria-hidden="true"></div>
+
+<main>
+<!-- 01 HERO -->
+<section id="s-intro" data-name="Intro" class="hero">
+ <div class="wrap">
+  <p class="kick r">Business Development Manager, Saudi Arabia · BIO-key International</p>
+  <h1 class="r" style="--d:1">Mohammed<br>Ahmed <em>Siddiqui</em></h1>
+  <p class="say r" style="--d:2">I build channels in the Kingdom and sell to the regulation. I'd like to do that for BIO-key.</p>
+  <div class="facts r" style="--d:3"><span>Riyadh</span><span>Transferable Iqama</span><span>Registered Engineer, SCE</span><span>MSc Telecom Eng., King Saud University</span></div>
+  <div class="stats r" style="--d:4">
+   <div class="stat"><b data-count="8" data-suffix="+">0</b><span>years of B2B sales in Saudi Arabia</span></div>
+   <div class="stat"><b data-count="50" data-suffix="+">0</b><span>system integrators in my network</span></div>
+   <div class="stat"><b data-count="35" data-prefix="$" data-suffix="M">0</b><span>pipeline identified, ~80% self-sourced</span></div>
+   <div class="stat"><b data-count="117" data-suffix="%">0</b><span>of last year's USD 1.5M target</span></div>
+  </div>
+  <div class="hfoot r" style="--d:6">
+   <div class="toc" id="toc"></div>
+   <div class="stop">Please stop me at any point. I'm happy to go wherever is most useful.</div>
+  </div>
+ </div>
+</section>
+
+<!-- 02 BRIEF -->
+<section id="s-brief" data-name="In brief">
+ <div class="wrap">
+  <div class="sh r"><span class="no">02</span><span class="ln"></span><span>In one minute</span></div>
+  <h2 class="r" style="--d:1">Three things I'd like you to <em>take away.</em></h2>
+  <div class="grid brief">
+   <div class="card r" style="--d:2"><div class="n">i.</div><h3>I already sell to your buyer's regulator</h3><p>NCA ECC, PDPL and SAMA-led selling into government, banking and healthcare.</p></div>
+   <div class="card r" style="--d:3"><div class="n">ii.</div><h3>BIO-key has momentum. The Saudi channel is thin.</h3><p>One distributor, one education partner, regional government wins. No visible integrator or MSSP layer.</p></div>
+   <div class="card r" style="--d:4"><div class="n">iii.</div><h3>That layer is my day job</h3><p>Build it with Cloud Distribution, not around them. My one gap, the product, I close in 30 days.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- 03 CAREER -->
+<section id="s-career" data-name="Career">
+ <div class="wrap">
+  <div class="sh r"><span class="no">03</span><span class="ln"></span><span>Career</span></div>
+  <h2 class="r" style="--d:1">Eight years in the Kingdom, <em>each role a step closer</em> to this one.</h2>
+  <div class="grid career">
+   <div class="card r" style="--d:2"><div id="careerChart"></div><p class="mono" style="margin-top:6px">Click a role</p></div>
+   <div class="card panel r" style="--d:3" id="careerPanel" aria-live="polite"></div>
+  </div>
+ </div>
+</section>
+
+<!-- 04 RECORD -->
+<section id="s-record" data-name="Track record">
+ <div class="wrap">
+  <div class="sh r"><span class="no">04</span><span class="ln"></span><span>Track record</span></div>
+  <h2 class="r" style="--d:1">The numbers behind it.</h2>
+  <div class="grid rec">
+   <div class="card r" style="--d:2"><span class="mono">Promise · pipeline identified, USD</span><div id="pipeChart"></div><span class="cap">PIF entities, ministries, data centres, airports, giga-projects.</span></div>
+   <div class="card r" style="--d:3"><span class="mono">Promise · how it was sourced</span><div id="donutChart"></div><span class="cap">Prospecting, consultants, partner referrals, tender intelligence.</span></div>
+   <div class="card r" style="--d:4"><span class="mono">Promise · previous annual target</span><div id="gaugeChart"></div><span class="cap">Of USD 1.5M, as sole rep in Saudi Arabia.</span></div>
+   <div class="card r" style="--d:5"><span class="mono">Nuevo · Jun 2023 – Jan 2025</span><div class="big">SAR 4M+ closed</div><span class="cap">#1 by monthly sales value three times</span><div class="months" id="months"></div><div class="mlab"><span>Jun '23</span><span>Sep · Oct '23 · Jan '24</span><span>Jan '25</span></div></div>
+   <div class="card r" style="--d:6"><span class="mono">Deal size I run end to end</span><div id="dealChart"></div><span class="cap">Discovery to Etimad award. Largest Nuevo deal ~SAR 1.25M.</span></div>
+   <div class="card r" style="--d:7"><span class="mono">Promise · what I cover alone</span><div id="covChart"></div><span class="cap">Sole in-Kingdom rep · USD 2.4M annual target.</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- 05 NETWORK -->
+<section id="s-network" data-name="Network">
+ <div class="wrap">
+  <div class="sh r"><span class="no">05</span><span class="ln"></span><span>The network I bring</span></div>
+  <h2 class="r" style="--d:1">The partners I <em>work with today.</em></h2>
+  <div class="grid netw">
+   <div class="r" style="--d:2"><div id="netChart"></div></div>
+   <div class="r" style="--d:3">
+    <div class="filters" id="netFilters"></div>
+    <div class="groups" id="netGroups"></div>
+    <p class="mono" style="margin-top:16px">Working relationships today, not commitments to BIO-key.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 06 WHY NOW -->
+<section id="s-why" data-name="Why now">
+ <div class="wrap">
+  <div class="sh r"><span class="no">06</span><span class="ln"></span><span>Market · why now</span></div>
+  <h2 class="r" style="--d:1">In the Kingdom, identity is a <em>compliance purchase.</em></h2>
+  <div class="grid mkt">
+   <div class="ctl r" style="--d:2" id="ctlList" role="group" aria-label="Regulatory controls"></div>
+   <div class="r" style="--d:3">
+    <div class="card ctlD" id="ctlDetail" aria-live="polite"></div>
+    <div class="card heat"><div style="display:flex;justify-content:space-between;align-items:center"><span class="mono">Which rules drive which sector</span><span class="tag t-inference">My reading</span></div><div id="heat"></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 07 BIO-KEY -->
+<section id="s-bk" data-name="BIO-key today">
+ <div class="wrap">
+  <div class="sh r"><span class="no">07</span><span class="ln"></span><span>BIO-key in the region</span></div>
+  <h2 class="r" style="--d:1">Public announcements are <em>picking up pace.</em></h2>
+  <div class="card r mt" style="--d:2;padding:18px 22px 14px"><div id="bkTimeline"></div>
+   <div class="legend"><span><i style="background:var(--acc)"></i>Saudi Arabia</span><span><i style="background:var(--blue)"></i>Regional, country named</span><span><i style="background:var(--card);border:2px solid var(--hot)"></i>Middle East, country not disclosed</span><span style="margin-left:auto" class="mono">Releases I tracked; not exhaustive</span></div>
+  </div>
+  <div class="grid bkrow" id="bkRow"></div>
+ </div>
+</section>
+
+<!-- 08 FIT -->
+<section id="s-fit" data-name="Fit">
+ <div class="wrap">
+  <div class="sh r"><span class="no">08</span><span class="ln"></span><span>Fit</span></div>
+  <h2 class="r" style="--d:1">What the role needs, and <em>how I match it.</em></h2>
+  <div class="grid fitw">
+   <div class="card r" style="--d:2"><table class="fm" id="fitTable"></table></div>
+   <div class="r" style="--d:3">
+    <div class="card"><span class="mono">Summary</span><div class="stack" id="fitStack"></div><div class="legend" id="fitLegend"></div></div>
+    <div class="card gapc" style="margin-top:16px"><span class="tag t-verify">The honest gap</span><h3 style="margin-top:10px">I haven't sold identity software yet.</h3>
+     <ol><li>Training and certification in month one; demo unaided by day 30.</li><li>Joint calls with Cloud Distribution pre-sales.</li><li>Lead with ECC 2-2-3, the requirement I already sell to.</li></ol></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 09 CHANNEL -->
+<section id="s-channel" data-name="Channel plan">
+ <div class="wrap">
+  <div class="sh r"><span class="no">09</span><span class="ln"></span><span>Strategy · channel</span></div>
+  <h2 class="r" style="--d:1">Build the layer <em>under the distributor.</em></h2>
+  <div class="grid chw">
+   <div class="r" style="--d:2" id="tiers"></div>
+   <div class="r" style="--d:3">
+    <div class="card chD" id="chDetail" aria-live="polite"></div>
+    <div class="prin"><b>Principle:</b> Cloud Distribution stays the anchor. Any added distributor must fill a gap, and only after we agree rules of engagement.</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 10 COMPETE -->
+<section id="s-compete" data-name="Competition">
+ <div class="wrap">
+  <div class="sh r"><span class="no">10</span><span class="ln"></span><span>Competitive landscape</span></div>
+  <h2 class="r" style="--d:1">Pick the fights <em>BIO-key wins.</em></h2>
+  <div class="grid cmpw">
+   <div class="card r" style="--d:2"><div id="cmpChart"></div><span class="tag t-inference" style="margin-top:8px">Positions are my hypothesis</span></div>
+   <div class="r" style="--d:3">
+    <div class="card"><h3>Where it should win</h3><ul class="wl"><li>On-prem / air-gapped: defence, government, CNI</li><li>Shared workstations, staff without phones</li><li>MFA for legacy apps, no rebuild</li><li>Biometric templates kept in-country</li></ul></div>
+    <div class="card" style="margin-top:14px"><h3>Where I wouldn't force it</h3><ul class="wl neg"><li>Microsoft estates where Entra is "free"</li><li>Pure cloud SSO with huge app catalogues</li><li>Deep PAM: partner, don't fight</li></ul></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 11 PLAN -->
+<section id="s-plan" data-name="First 90 days">
+ <div class="wrap">
+  <div class="sh r"><span class="no">11</span><span class="ln"></span><span>First 90 days</span></div>
+  <h2 class="r" style="--d:1">A plan to agree with you, <em>not a promise.</em></h2>
+  <p class="lede r" style="--d:2">Milestones, not numbers. Targets come once I've seen the pipeline.</p>
+  <div class="card r mt" style="--d:3"><div id="gantt"></div></div>
+ </div>
+</section>
+
+<!-- 12 QUESTIONS -->
+<section id="s-q" data-name="Questions">
+ <div class="wrap">
+  <div class="sh r"><span class="no">12</span><span class="ln"></span><span>Questions for you</span></div>
+  <h2 class="r" style="--d:1">What I'd like <em>to understand.</em></h2>
+  <div class="grid qs" id="qs"></div>
+  <div class="close r" style="--d:9">
+   <div class="thx">Thank you.</div>
+   <div class="ct"><a href="mailto:mahs545@gmail.com">mahs545@gmail.com</a><a href="https://linkedin.com/in/mohammed-ahmed-siddiqui" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohammed-ahmed-siddiqui</a><span style="color:var(--mut)">Riyadh, Saudi Arabia</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- 13 SOURCES -->
+<section id="s-src" data-name="Sources">
+ <div class="wrap">
+  <div class="sh r"><span class="no">13</span><span class="ln"></span><span>Sources</span></div>
+  <h2 class="r" style="--d:1">Every claim, <em>traceable.</em></h2>
+  <div class="legend r" style="--d:2;margin-top:14px"><span><span class="tag t-source">Source</span> public primary source</span><span><span class="tag t-claim">Company claim</span> BIO-key marketing</span><span><span class="tag t-inference">My reading</span> inference</span><span><span class="tag t-verify">To verify</span> unconfirmed</span></div>
+  <div class="grid srcs" id="srcs"></div>
+  <p class="disc">Independent interview preparation by Mohammed Ahmed Siddiqui. Not affiliated with or endorsed by BIO-key International or any company named. Public sources as of October 2026. Partner names show existing working relationships, not agreements.</p>
+ </div>
+</section>
+</main>
+
+<script>
+(function(){
+"use strict";
+var NS="http://www.w3.org/2000/svg";
+var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function h(t,a){var e=document.createElement(t);a=a||{};Object.keys(a).forEach(function(k){var v=a[k];if(v==null)return;if(k==="class")e.className=v;else if(k==="text")e.textContent=v;else if(k==="style")e.style.cssText=v;else if(k.slice(0,2)==="on")e.addEventListener(k.slice(2),v);else e.setAttribute(k,v)});for(var i=2;i<arguments.length;i++)ap(e,arguments[i]);return e}
+function S(t,a){var e=document.createElementNS(NS,t);a=a||{};Object.keys(a).forEach(function(k){var v=a[k];if(v==null)return;if(k==="text")e.textContent=v;else if(k.slice(0,2)==="on")e.addEventListener(k.slice(2),v);else e.setAttribute(k,v)});for(var i=2;i<arguments.length;i++)ap(e,arguments[i]);return e}
+function ap(e,c){if(c==null||c===false)return;if(Array.isArray(c)){c.forEach(function(x){ap(e,x)});return}e.appendChild(c.nodeType?c:document.createTextNode(String(c)))}
+function $(id){return document.getElementById(id)}
+var TAGL={source:"Source",claim:"Company claim",inference:"My reading",verify:"To verify",cv:"Per CV"};
+function tag(t,src){return h("span",{class:"tag t-"+t,text:TAGL[t]+(src?" · "+src:"")})}
+function activate(el,fn){el.addEventListener("click",fn);el.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();fn()}})}
+
+/* ---------- CAREER ---------- */
+var ROLES=[
+ {co:"Telebu Communications",t:"Business Development Executive",s:2018.17,e:2020.87,d:"Mar 2018 – Nov 2020",p:["New B2B business across KSA: UCaaS, IVR, contact centre","Full cycle: prospecting to proposal","Enterprise and SMB accounts"]},
+ {co:"Mastt",t:"Sales Development Representative",s:2020.87,e:2023.37,d:"Nov 2020 – May 2023",p:["Enterprise SaaS pipeline in KSA","ICP qualification with Sales Navigator and HubSpot","Stakeholder maps and discovery handed to AEs"]},
+ {co:"Nuevo, Apple Authorized Reseller",t:"Enterprise & mid-market sales",s:2023.42,e:2025.0,d:"Jun 2023 – Jan 2025",p:["SAR 4M+ closed; largest deal ~SAR 1.25M","#1 monthly sales value: Sep '23, Oct '23, Jan '24","RFPs built on NCA ECC, PDPL, SAMA CSF","Jamf Certified Endpoint Security Associate"]},
+ {co:"Promise Technology",t:"Business Development Manager, KSA",s:2025.0,e:2026.82,d:"Jan 2025 – present",p:["Sole in-Kingdom rep · USD 2.4M target","Pipeline USD 15M → 35M, ~80% self-sourced","~117% of previous USD 1.5M target","50+ SIs · 2 VADs · 10 OEM alliances","Etimad, Monafasat, consultant specs"]},
+ {co:"BIO-key International",t:"Business Development Manager, Saudi Arabia",s:2026.86,e:2027.4,d:"Next",p:["Integrator network + compliance-led pitch + procurement know-how, applied to identity","Product gap closed in the first 30 days"],next:true}
+];
+(function(){
+ var W=1000,H=330,x0=230,x1=980,y0=2017.3,y1=2027.5;function X(t){return x0+(t-y0)/(y1-y0)*(x1-x0)}
+ var svg=S("svg",{viewBox:"0 0 "+W+" "+H,role:"img","aria-label":"Career timeline 2018 to present"});
+ for(var y=2018;y<=2027;y++){svg.appendChild(S("line",{x1:X(y),x2:X(y),y1:44,y2:H-34,stroke:"var(--rule)","stroke-width":1}));svg.appendChild(S("text",{class:"m",x:X(y),y:H-12,"text-anchor":"middle",text:"'"+String(y).slice(2)}))}
+ svg.appendChild(S("g",{class:"pop",style:"--d:0"},S("path",{d:"M"+X(2017.6)+",18 l7,7 l-7,7 l-7,-7z",fill:"var(--ink)"}),S("text",{x:X(2017.6)+14,y:30,"font-size":"14",text:"MSc Telecom Engineering, King Saud University"})));
+ var groups=[];
+ ROLES.forEach(function(r,i){var yy=58+i*50,w=X(r.e)-X(r.s);
+  var g=S("g",{class:"role",tabindex:"0",role:"button","aria-label":r.co+", "+r.d});
+  g.appendChild(S("rect",{class:"b gx",style:"--d:"+i,x:X(r.s),y:yy,width:w,height:32,rx:6,fill:r.next?"none":"var(--bar)",stroke:r.next?"var(--hot)":"none","stroke-dasharray":r.next?"5 4":null,"stroke-width":r.next?2:0}));
+  g.appendChild(S("text",{class:"l",x:X(r.s)-12,y:yy+21,"text-anchor":"end","font-size":"15",text:r.co.split(",")[0]}));
+  if(r.next)g.appendChild(S("text",{x:X(r.s)+w/2,y:yy+22,"text-anchor":"middle","font-size":"15","font-weight":"700",style:"fill:var(--hot)",text:"?"}));
+  function sel(){groups.forEach(function(x){x.classList.toggle("sel",x===g)});show(r)}
+  activate(g,sel);groups.push(g);svg.appendChild(g)});
+ $("careerChart").appendChild(svg);
+ function show(r){$("careerPanel").replaceChildren(h("div",{class:"swap"},h("span",{class:"mono",text:r.d}),h("h3",{style:"margin-top:6px",text:r.t}),h("div",{style:"color:var(--mut);margin-top:2px",text:r.co}),h("ul",{},r.p.map(function(x){return h("li",{text:x})}))))}
+ groups[3].classList.add("sel");show(ROLES[3]);
+})();
+
+/* ---------- RECORD ---------- */
+(function(){
+ var svg=S("svg",{viewBox:"0 0 300 170",role:"img","aria-label":"Pipeline grew from 15 to 35 million USD"});
+ var base=148,max=35,hh=112;
+ [[15,"Start"],[35,"Now"]].forEach(function(v,i){var bh=v[0]/max*hh,x=40+i*130;
+  svg.appendChild(S("rect",{class:"gy",style:"--d:"+i,x:x,y:base-bh,width:80,height:bh,rx:5,fill:i?"var(--acc)":"var(--rule)"}));
+  svg.appendChild(S("text",{class:"pop",style:"--d:"+(i+3),x:x+40,y:base-bh-9,"text-anchor":"middle","font-size":"24","font-family":"Instrument Serif,serif",text:"$"+v[0]+"M"}));
+  svg.appendChild(S("text",{class:"m",x:x+40,y:base+17,"text-anchor":"middle",text:v[1]}))});
+ svg.appendChild(S("path",{class:"drw",pathLength:"100",style:"--d:6",d:"M128,96 C148,76 156,66 164,58",stroke:"var(--hot)","stroke-width":2,fill:"none"}));
+ svg.appendChild(S("text",{class:"pop",x:104,y:64,"font-size":"15","font-weight":"700",style:"--d:8;fill:var(--hot)",text:"+133%"}));
+ $("pipeChart").appendChild(svg);
+ var d=S("svg",{viewBox:"0 0 300 170",role:"img","aria-label":"About 80 percent self-sourced"});
+ d.appendChild(S("circle",{cx:150,cy:85,r:62,fill:"none",stroke:"var(--rule)","stroke-width":18}));
+ d.appendChild(S("circle",{class:"drw",pathLength:"100",style:"--to:20",cx:150,cy:85,r:62,fill:"none",stroke:"var(--acc)","stroke-width":18,transform:"rotate(-90 150 85)"}));
+ d.appendChild(S("text",{x:150,y:94,"text-anchor":"middle","font-size":"42","font-family":"Instrument Serif,serif",text:"80%"}));
+ d.appendChild(S("text",{class:"m",x:150,y:115,"text-anchor":"middle",text:"self-sourced"}));
+ $("donutChart").appendChild(d);
+ var g=S("svg",{viewBox:"0 0 300 170",role:"img","aria-label":"117 percent of target"});
+ var arc="M50,148 A100,100 0 0 1 250,148";
+ g.appendChild(S("path",{d:arc,fill:"none",stroke:"var(--rule)","stroke-width":16,"stroke-linecap":"round"}));
+ g.appendChild(S("path",{class:"drw",pathLength:"100",style:"--to:"+(100-117/150*100).toFixed(1),d:arc,fill:"none",stroke:"var(--acc)","stroke-width":16,"stroke-linecap":"round"}));
+ var a=Math.PI*(1-100/150);
+ g.appendChild(S("line",{x1:150+Math.cos(a)*82,y1:148-Math.sin(a)*82,x2:150+Math.cos(a)*118,y2:148-Math.sin(a)*118,stroke:"var(--ink)","stroke-width":2.5}));
+ g.appendChild(S("text",{class:"m",x:150+Math.cos(a)*118+6,y:148-Math.sin(a)*118-6,text:"100%"}));
+ g.appendChild(S("text",{x:150,y:136,"text-anchor":"middle","font-size":"42","font-family":"Instrument Serif,serif",text:"117%"}));
+ $("gaugeChart").appendChild(g);
+ var m=$("months"),lab={3:"Sep 2023: #1",4:"Oct 2023: #1",7:"Jan 2024: #1"};
+ for(var i=0;i<20;i++){var c=h("i",{style:"--d:"+i});if(lab[i]){c.className="best";c.title=lab[i]}m.appendChild(c)}
+ var r=S("svg",{viewBox:"0 0 300 120",role:"img","aria-label":"Deal range 600 thousand to over 1 million USD"});
+ var sx=function(v){return 20+v/1.4*260};
+ r.appendChild(S("line",{x1:20,x2:280,y1:64,y2:64,stroke:"var(--rule)","stroke-width":2}));
+ [0,0.5,1,1.4].forEach(function(v){r.appendChild(S("text",{class:"m",x:sx(v),y:98,"text-anchor":"middle",text:v===0?"0":v+"M"}))});
+ r.appendChild(S("rect",{class:"gx",style:"--d:1",x:sx(.6),y:53,width:sx(1.22)-sx(.6),height:22,rx:11,fill:"var(--acc)"}));
+ r.appendChild(S("path",{d:"M"+sx(1.22)+",53 l15,11 l-15,11z",fill:"var(--acc)",class:"pop",style:"--d:6"}));
+ r.appendChild(S("text",{class:"pop",style:"--d:5",x:sx(.6),y:38,"font-size":"16","font-weight":"700",text:"USD 600K → 1M+"}));
+ $("dealChart").appendChild(r);
+ var cv=S("svg",{viewBox:"0 0 300 136",role:"img","aria-label":"About 25 priority accounts and 50 system integrators"});
+ cv.appendChild(S("text",{x:0,y:16,"font-size":"15","font-weight":"600",text:"~25 priority accounts"}));
+ for(var k=0;k<25;k++)cv.appendChild(S("rect",{class:"pop",style:"--d:"+k,x:k*12,y:28,width:8,height:16,rx:2,fill:"var(--ink)"}));
+ cv.appendChild(S("text",{x:0,y:80,"font-size":"15","font-weight":"600",text:"~50 system integrators"}));
+ for(var j=0;j<50;j++)cv.appendChild(S("circle",{class:"pop",style:"--d:"+(j/2+8),cx:4+(j%25)*12,cy:96+Math.floor(j/25)*13,r:4,fill:"var(--acc)"}));
+ $("covChart").appendChild(cv);
+})();
+
+/* ---------- NETWORK ---------- */
+(function(){
+ var N={si:["stc solutions","3S","Futuretech ICT","Abana","Seder Group","KAES","Secutronic","Black Arrow","Awajem"],vad:["Anixter","Aligntech"],oem:["Western Digital","Seagate","Toshiba","Axis","Bosch","Milestone","Digifort","Genetec","Hanwha Vision","Allied Telesis"]};
+ var COL={si:"var(--acc)",vad:"var(--hot)",oem:"var(--blue)"},RAD={vad:95,si:175,oem:255},OFF={vad:-0.5,si:0.15,oem:0};
+ var W=760,H=620,cx=380,cy=310;
+ var svg=S("svg",{viewBox:"0 0 "+W+" "+H,role:"img","aria-label":"Network: integrators, distributors, OEM alliances"});
+ Object.keys(RAD).forEach(function(k){svg.appendChild(S("circle",{cx:cx,cy:cy,r:RAD[k],fill:"none",stroke:"var(--rule)","stroke-dasharray":"2 5"}))});
+ var lines=S("g"),nodes=S("g");svg.appendChild(lines);svg.appendChild(nodes);var all=[],n=0;
+ Object.keys(N).forEach(function(k){N[k].forEach(function(name,i){var a=OFF[k]+i/N[k].length*Math.PI*2-Math.PI/2,x=cx+Math.cos(a)*RAD[k],y=cy+Math.sin(a)*RAD[k];
+  var ln=S("line",{class:"nl drw",pathLength:"100",style:"--d:"+n,x1:cx,y1:cy,x2:x,y2:y});lines.appendChild(ln);
+  var right=Math.cos(a)>=0,vert=Math.abs(Math.cos(a))<0.2,lx=vert?x:x+(right?12:-12),anc=vert?"middle":(right?"start":"end"),ly=vert?(y+(Math.sin(a)>0?24:-14)):y+5;
+  var g=S("g",{class:"nn pop",style:"--d:"+n},S("circle",{cx:x,cy:y,r:k==="si"?8.5:7,fill:COL[k]}),S("text",{x:lx,y:ly,"text-anchor":anc,"font-size":"15",text:name}));
+  nodes.appendChild(g);all.push({k:k,g:g,l:ln});n++})});
+ svg.appendChild(S("circle",{class:"pop",cx:cx,cy:cy,r:40,fill:"var(--ink)"}));
+ svg.appendChild(S("text",{x:cx,y:cy+7,"text-anchor":"middle","font-size":"22","font-family":"Instrument Serif,serif",style:"fill:var(--paper)",text:"Me"}));
+ $("netChart").appendChild(svg);
+ var F=[["all","All"],["si","Integrators"],["vad","Distributors"],["oem","OEM alliances"]],btns=[];
+ function filt(k){btns.forEach(function(b){b.setAttribute("aria-pressed",b._k===k?"true":"false")});all.forEach(function(o){var on=k==="all"||o.k===k;o.g.classList.toggle("fade",!on);o.l.classList.toggle("fade",!on);o.l.style.stroke=on&&k!=="all"?COL[o.k]:""})}
+ F.forEach(function(f){var b=h("button",{type:"button","aria-pressed":"false",text:f[1],onclick:function(){filt(f[0])}});b._k=f[0];btns.push(b);$("netFilters").appendChild(b)});
+ [["si","50+","System integrators","Enterprise ICT + ELV & security (9 shown)"],["vad","2","Value-added distributors","Anixter, Aligntech"],["oem","10","OEM alliances","Joint architectures for end users"]].forEach(function(r){$("netGroups").appendChild(h("div",{class:"g",onclick:function(){filt(r[0])}},h("b",{style:"color:"+COL[r[0]],text:r[1]}),h("div",{},h("div",{style:"font-weight:600",text:r[2]}),h("span",{text:r[3]}))))});
+ filt("all");
+})();
+
+/* ---------- WHY NOW ---------- */
+(function(){
+ var C=[
+  {c:"ECC 2-2-3-2",n:"MFA for remote & privileged access",w:"MFA for remote access and privileged accounts. Factors chosen by impact assessment.",m:"The clearest trigger for every government entity and CNI operator.",t:"source",s:"S1"},
+  {c:"ECC 2-2-3-4",n:"Privileged access management",w:"Privileged accounts controlled, approved and monitored.",m:"Strong authentication in front of PAM. A partner play.",t:"source",s:"S1"},
+  {c:"ECC 2-4-3-2",n:"MFA for remote email",w:"MFA for remote and webmail access.",m:"A fast first project inside an account.",t:"source",s:"S1"},
+  {c:"ECC 4-1-3-2",n:"Managed services in-Kingdom",w:"Managed security centres using remote access must sit fully inside KSA.",m:"Why local MSSPs and a local partner matter.",t:"source",s:"S1"},
+  {c:"CCC-2:2024",n:"Cloud controls & localisation",w:"Updated cloud controls incl. data localisation. Specific rules still to confirm.",m:"On-prem / in-Kingdom options may differentiate.",t:"verify",s:"S2"},
+  {c:"SAMA CSF 3.3.5",n:"Banks: identity & access",w:"Reported: risk-based MFA for remote, sensitive and privileged access.",m:"Opens banking, where I built SAMA-led RFPs.",t:"verify",s:"S3"},
+  {c:"PDPL",n:"Biometrics as sensitive data",w:"Reported: biometrics are sensitive personal data, with consent duties.",m:"Customer-controlled, on-prem templates could help.",t:"verify",s:"S4"}
+ ],btns=[];
+ function show(i){var x=C[i];btns.forEach(function(b,j){b.setAttribute("aria-pressed",j===i?"true":"false")});
+  $("ctlDetail").replaceChildren(h("div",{class:"swap"},h("div",{style:"display:flex;justify-content:space-between;align-items:center;gap:10px"},h("span",{class:"mono",style:"color:var(--acc)",text:x.c}),tag(x.t,x.s)),h("h3",{text:x.n}),h("div",{class:"lab",text:"What it says"}),h("p",{text:x.w}),h("div",{class:"lab",text:"Why it matters for BIO-key"}),h("p",{text:x.m})))}
+ C.forEach(function(x,i){var b=h("button",{type:"button","aria-pressed":"false",onclick:function(){show(i)}},h("span",{class:"code",text:x.c}),h("span",{class:"nm",text:x.n}),x.t==="verify"?h("span",{class:"tag t-verify",text:"verify"}):null);btns.push(b);$("ctlList").appendChild(b)});
+ show(0);
+ var cols=["NCA ECC","SAMA CSF","PDPL","NCA CCC"],rows=[["Government & CNI","f","o","f","f"],["Banking & fintech","h","f","f","h"],["Healthcare","h","o","f","h"],["Education","h","o","f","h"]];
+ $("heat").appendChild(h("table",{},h("tr",{},h("th",{text:"Sector"}),cols.map(function(c){return h("th",{text:c})})),rows.map(function(r,i){return h("tr",{},h("td",{text:r[0]}),r.slice(1).map(function(v,j){return h("td",{},h("span",{class:"dot pop "+v,style:"--d:"+(i*4+j),title:{f:"Primary driver",h:"Applies in part",o:"Not primary"}[v]}))}))})));
+ $("heat").appendChild(h("div",{class:"legend",style:"margin-top:8px"},h("span",{},h("span",{class:"dot f",style:"width:11px;height:11px;margin-right:6px"}),"primary"),h("span",{},h("span",{class:"dot h",style:"width:11px;height:11px;margin-right:6px"}),"in part"),h("span",{},h("span",{class:"dot o",style:"width:11px;height:11px;margin-right:6px"}),"not primary")));
+})();
+
+/* ---------- BIO-KEY TIMELINE (evenly spaced) ---------- */
+(function(){
+ var EV=[
+  {d:"Jan 2025",n:"National Bank of Egypt",s:"~30k staff, via Raya IT",g:"reg"},
+  {d:"19 May 2025",n:"Cloud Distribution",s:"Saudi VAD & CAP partner",g:"ksa"},
+  {d:"Nov 2025",n:"VaporVM",s:"Dubai integrator partner",g:"reg"},
+  {d:"7 Nov 2025",n:"Defence deployment",s:"via Cloud Distribution",g:"und"},
+  {d:"Jul 2026",n:"Central Bank of Jordan",s:"national biometric initiative",g:"reg"},
+  {d:"6 Aug 2026",n:"Maktabi Tech",s:"Saudi education",g:"ksa"},
+  {d:"29 Sep 2026",n:"Al Majlis Group",s:"advisory, UAE & KSA",g:"ksa"},
+  {d:"13 Oct 2026",n:"Gov. security agency",s:"via IT Harmony",g:"und"},
+  {d:"22 Oct 2026",n:"Gov. institution",s:"via VaporVM",g:"und"}
+ ];
+ var W=1100,H=318,cy=150,x0=120,step=(W-2*x0)/(EV.length-1);function X(i){return x0+i*step}
+ var COL={ksa:"var(--acc)",reg:"var(--blue)",und:"var(--hot)"};
+ var svg=S("svg",{viewBox:"0 0 "+W+" "+H,role:"img","aria-label":"Timeline of nine BIO-key regional announcements, five of them between July and October 2026"});
+ svg.appendChild(S("rect",{class:"pop",style:"--d:2",x:X(4)-56,y:cy-16,width:X(8)-X(4)+112,height:32,rx:16,fill:"var(--acc-soft)"}));
+ svg.appendChild(S("line",{class:"drw",pathLength:"100",x1:60,x2:W-40,y1:cy,y2:cy,stroke:"var(--ink)","stroke-width":1.6}));
+ svg.appendChild(S("text",{class:"m",x:4,y:cy+5,text:"2025"}));
+ var dx=(X(3)+X(4))/2;
+ svg.appendChild(S("line",{x1:dx,x2:dx,y1:cy-26,y2:cy+26,stroke:"var(--ink)","stroke-width":1.2,"stroke-dasharray":"3 3"}));
+ svg.appendChild(S("rect",{x:dx-24,y:cy-11,width:48,height:22,rx:11,fill:"var(--card)",stroke:"var(--ink)"}));
+ svg.appendChild(S("text",{class:"m",x:dx,y:cy+4.5,"text-anchor":"middle",style:"fill:var(--ink)",text:"2026"}));
+ EV.forEach(function(e,i){var x=X(i),up=i%2===0;
+  var g=S("g",{class:"ev pop",style:"--d:"+(i*2+3)});
+  g.appendChild(S("line",{x1:x,x2:x,y1:up?cy-60:cy+9,y2:up?cy-9:cy+40,stroke:"var(--faint)","stroke-width":1}));
+  g.appendChild(S("circle",{cx:x,cy:cy,r:8,fill:e.g==="und"?"var(--card)":COL[e.g],stroke:COL[e.g],"stroke-width":e.g==="und"?2.8:0}));
+  var ty=up?cy-112:cy+58;
+  g.appendChild(S("text",{class:"m",x:x,y:ty,"text-anchor":"middle",text:e.d}));
+  g.appendChild(S("text",{class:"evn",x:x,y:ty+20,"text-anchor":"middle","font-size":"16","font-weight":"600",text:e.n}));
+  g.appendChild(S("text",{x:x,y:ty+38,"text-anchor":"middle","font-size":"13.5",style:"fill:var(--mut)",text:e.s}));
+  svg.appendChild(g)});
+ svg.appendChild(S("text",{class:"pop",style:"--d:22;fill:var(--acc)",x:(X(4)+X(8))/2,y:H-6,"text-anchor":"middle","font-size":"15","font-weight":"700",text:"5 of 9 in Jul – Oct 2026"}));
+ $("bkTimeline").appendChild(svg);
+
+ /* pace chart */
+ var P=[["H1 '25",2],["H2 '25",2],["H1 '26",0],["H2 '26*",5]];
+ var ps=S("svg",{viewBox:"0 0 300 130",role:"img","aria-label":"Announcements per half year: 2, 2, 0, 5"});
+ P.forEach(function(p,i){var bh=p[1]/5*76,x=20+i*70;
+  ps.appendChild(S("rect",{class:"gy",style:"--d:"+i,x:x,y:100-bh,width:44,height:Math.max(bh,2),rx:4,fill:i===3?"var(--acc)":"var(--rule)"}));
+  ps.appendChild(S("text",{class:"pop",style:"--d:"+(i+3),x:x+22,y:94-bh,"text-anchor":"middle","font-size":"20","font-family":"Instrument Serif,serif",text:String(p[1])}));
+  ps.appendChild(S("text",{class:"m",x:x+22,y:118,"text-anchor":"middle",text:p[0]}))});
+ $("bkRow").appendChild(h("div",{class:"card r",style:"--d:6"},h("span",{class:"mono",text:"Announcements per half-year"}),ps,h("span",{class:"mono",style:"font-size:.72rem",text:"* to 22 Oct"})));
+ [["2022","Saudi healthcare provider, ~15,000 users","source","S12"],["1,000+","customers: company claim (SEC filing reportedly 600+)","claim","S17"],["0","Saudi bank references found. Finance is open ground","inference",""]].forEach(function(r,i){$("bkRow").appendChild(h("div",{class:"card r",style:"--d:"+(7+i)},h("b",{text:r[0]}),h("span",{class:"ds",text:r[1]}),tag(r[2],r[3])))});
+})();
+
+/* ---------- FIT ---------- */
+(function(){
+ var F=[
+  ["New business: gov, finance, enterprise","Gov, PIF, giga-projects at Promise; banks & healthcare at Nuevo","d"],
+  ["Channel & partner development","50+ SIs, 2 VADs, 10 OEM alliances","d"],
+  ["Public procurement","Etimad & Monafasat; shaping tender specs","d"],
+  ["Compliance-led selling","RFPs on NCA ECC, PDPL, SAMA CSF","d"],
+  ["Technical credibility","MSc Telecom Eng.; Registered Engineer (SCE)","d"],
+  ["CRM & forecast discipline","HubSpot, Sales Navigator; Salesforce to learn","a"],
+  ["Security domain","Jamf Endpoint Security cert; security & ELV SIs","a"],
+  ["Selling IAM / biometric software","Not yet; see plan","g"]
+ ];
+ var t=$("fitTable");t.appendChild(h("tr",{},h("th",{text:"Role needs"}),h("th",{text:"Direct"}),h("th",{text:"Adjacent"}),h("th",{text:"Gap"})));
+ F.forEach(function(r,i){t.appendChild(h("tr",{class:"r",style:"--d:"+(i+3)},h("td",{},h("div",{class:"need",text:r[0]}),h("div",{class:"ev2",text:r[1]})),["d","a","g"].map(function(k){return h("td",{class:"c"},r[2]===k?h("span",{class:"fdot "+k}):null)})))});
+ var cnt={d:0,a:0,g:0};F.forEach(function(r){cnt[r[2]]++});
+ [["d","direct","var(--acc)"],["a","adjacent","var(--blue)"],["g","gap","var(--hot)"]].forEach(function(l,i){$("fitStack").appendChild(h("i",{style:"--d:"+i+";width:"+(cnt[l[0]]/F.length*100)+"%;background:"+l[2]}));$("fitLegend").appendChild(h("span",{},h("i",{style:"background:"+l[2]}),cnt[l[0]]+" "+l[1]))});
+})();
+
+/* ---------- CHANNEL ---------- */
+(function(){
+ var T=[
+  {n:"Vendor",it:[{n:"BIO-key",k:"core",tg:"source",s:"S5",d:"PortalGuard IAM, Passkey:YOU, WEB-key, Identity-Bound Biometrics. Partner-led in KSA, as I read it."}]},
+  {n:"Distribution",it:[
+   {n:"Cloud Distribution",k:"anchor",tg:"source",s:"S5",d:"Saudi VAD and CAP partner since May 2025, with a dedicated Riyadh team. The anchor: agree account ownership and deal registration in month one."},
+   {n:"Bulwark",k:"eval",tg:"verify",s:"D1",d:"Cybersecurity VAD since 1999. Dubai HQ, Saudi office per its site, 30+ brands. Check line card for competing MFA."},
+   {n:"Spire Solutions",k:"eval",tg:"verify",s:"D2",d:"MEA cybersecurity VAD, active in Riyadh; 2022 partnership with SAFCSP. Line card to check."},
+   {n:"Gulf IT Network",k:"eval",tg:"verify",s:"D3",d:"GCC cybersecurity VAD since 2011, Dubai HQ. Saudi presence to confirm."},
+   {n:"FDS",k:"eval",tg:"verify",s:"D4",d:"Fourth Dimension Systems: Middle East IT solutions, 20+ years. Distributor or integrator: to confirm."}]},
+  {n:"Integrators",it:[{n:"stc solutions",k:"mine"},{n:"3S",k:"mine"},{n:"Futuretech ICT",k:"mine"},{n:"Abana",k:"mine"},{n:"Seder Group",k:"mine"},{n:"ELV & security SIs",k:"mine",d:"KAES, Secutronic, Black Arrow, Awajem. Physical + logical access is a natural home for biometrics."}]},
+  {n:"Managed svc",it:[{n:"In-Kingdom MSSPs & SOCs",k:"gap",tg:"inference",d:"ECC 4-1-3-2 keeps managed security in-Kingdom. MFA-as-a-service through a Saudi MSSP fits. Not visible in BIO-key's footprint: one to recruit."}]},
+  {n:"End users",it:[{n:"Government & CNI"},{n:"Banking & fintech"},{n:"Healthcare"},{n:"Education"},{n:"Giga-projects & PIF"}]}
+ ];
+ var SI="An integrator I work with today. Plan: qualify jointly with Cloud Distribution, register via CAP, train their pre-sales. A relationship, not a commitment.";
+ var EU="Target sector. Account list built in days 25–50 and agreed with my manager.";
+ var chips=[],first=null,box=$("tiers");
+ function show(it,b){chips.forEach(function(c){c.setAttribute("aria-pressed",c===b?"true":"false")});
+  var lab={core:"Vendor",anchor:"Anchor distributor",eval:"Shortlist to evaluate",mine:"My network",gap:"To recruit"}[it.k]||"Target sector";
+  $("chDetail").replaceChildren(h("div",{class:"swap"},h("div",{style:"display:flex;justify-content:space-between;gap:10px;align-items:center"},h("span",{class:"mono",text:lab}),it.tg?tag(it.tg,it.s):(it.k==="mine"?tag("cv",""):null)),h("h3",{text:it.n}),h("p",{text:it.d||(it.k==="mine"?SI:EU)})))}
+ T.forEach(function(t,i){if(i)box.appendChild(h("div",{class:"flow","aria-hidden":"true"},h("i",{style:"animation-delay:"+(i*0.4)+"s"})));
+  var cw=h("div",{class:"chips"});
+  t.it.forEach(function(it){var b=h("button",{type:"button",class:"chip"+(it.k?" k-"+it.k:""),"aria-pressed":"false",text:it.n});b.addEventListener("click",function(){show(it,b)});chips.push(b);cw.appendChild(b);if(it.k==="anchor")first=[it,b]});
+  box.appendChild(h("div",{class:"tier"},h("div",{class:"tn",text:t.n}),cw))});
+ box.appendChild(h("div",{class:"keyline"},h("span",{},h("i",{style:"border:2px solid var(--acc)"}),"Anchor"),h("span",{},h("i",{style:"border:1.5px dashed var(--blue)"}),"Evaluate"),h("span",{},h("span",{style:"color:var(--acc)",text:"●"}),"My network"),h("span",{},h("i",{style:"border:1.5px dashed var(--hot)"}),"To recruit"),h("span",{class:"mono",text:"Click any item"})));
+ show(first[0],first[1]);
+})();
+
+/* ---------- COMPETE ---------- */
+(function(){
+ var P=[["Microsoft Entra",.14,.34],["Okta",.08,.2],["Cisco Duo",.24,.1],["CyberArk (PAM)",.6,.26],["Ping / Thales",.42,.48],["RSA",.68,.1],["HID",.5,.68],["BIO-key",.84,.86,1]];
+ var W=640,H=440,L=56,B=50;function X(v){return L+v*(W-L-30)}function Y(v){return H-B-v*(H-B-30)}
+ var svg=S("svg",{viewBox:"0 0 "+W+" "+H,role:"img","aria-label":"Positioning hypothesis: BIO-key toward on-prem and biometric-native"});
+ svg.appendChild(S("rect",{class:"pop",x:X(.6),y:Y(1),width:X(1)-X(.6),height:Y(.55)-Y(1),rx:10,fill:"var(--acc-soft)"}));
+ svg.appendChild(S("text",{class:"m",x:X(.62),y:Y(.97)+10,text:"where it should win"}));
+ svg.appendChild(S("line",{class:"drw",pathLength:"100",x1:L,y1:H-B,x2:W-20,y2:H-B,stroke:"var(--ink)"}));
+ svg.appendChild(S("line",{class:"drw",pathLength:"100",x1:L,y1:H-B,x2:L,y2:20,stroke:"var(--ink)"}));
+ svg.appendChild(S("text",{class:"m",x:(W+L)/2,y:H-14,"text-anchor":"middle",text:"cloud-first  →  on-prem / air-gapped"}));
+ svg.appendChild(S("text",{class:"m",x:18,y:(H-B)/2,"text-anchor":"middle",transform:"rotate(-90 18 "+(H-B)/2+")",text:"phone / token  →  biometric-native"}));
+ P.forEach(function(p,i){var x=X(p[1]),y=Y(p[2]),me=p[3],rt=p[1]>.7;
+  svg.appendChild(S("g",{class:"cp pop",style:"--d:"+(i+2)},S("circle",{cx:x,cy:y,r:me?12:7,fill:me?"var(--acc)":"var(--ink)",opacity:me?1:.78}),S("text",{x:rt?x-17:x+13,y:y+5,"text-anchor":rt?"end":"start","font-size":me?"18":"15","font-weight":me?"700":"500",text:p[0]})))});
+ $("cmpChart").appendChild(svg);
+})();
+
+/* ---------- GANTT ---------- */
+(function(){
+ var G=[
+  ["Product training: PortalGuard, Passkey:YOU, IBB",0,30,"a"],
+  ["Review existing Saudi pipeline",0,20,"a"],
+  ["Meet Cloud Distribution & Maktabi Tech",5,25,"a"],
+  ["Agree rules of engagement & deal registration",10,35,"a"],
+  ["Target account list by sector",25,50,"b"],
+  ["Joint discovery with Cloud Distribution",35,80,"b"],
+  ["Shortlist SIs & MSSPs; assess distributor gaps",40,70,"b"],
+  ["ECC 2-2-3 one-pager for partners",45,60,"b"],
+  ["Stage-qualified forecast in CRM",60,90,"c"],
+  ["First PoC with written success criteria",65,90,"c"]
+ ],MS=[[30,"Demo unaided"],[60,"Partner shortlist"],[90,"PoC + forecast"]];
+ var W=1100,L=420,R=1070,top=60,rh=32,H=top+G.length*rh+30;function X(d){return L+d/90*(R-L)}
+ var svg=S("svg",{viewBox:"0 0 "+W+" "+H,role:"img","aria-label":"30-60-90 day plan"});
+ [["Learn & align",0,30],["Qualify & recruit",30,60],["Prove & forecast",60,90]].forEach(function(p,i){svg.appendChild(S("rect",{x:X(p[1]),y:top-8,width:X(p[2])-X(p[1]),height:G.length*rh+8,fill:i%2?"rgba(31,27,22,.035)":"none"}));svg.appendChild(S("text",{x:X(p[1])+8,y:22,"font-size":"22","font-family":"Instrument Serif,serif",text:p[0]}))});
+ [0,30,60,90].forEach(function(d){svg.appendChild(S("line",{x1:X(d),x2:X(d),y1:top-12,y2:H-24,stroke:"var(--rule)"}));svg.appendChild(S("text",{class:"m",x:X(d),y:H-6,"text-anchor":"middle",text:"Day "+d}))});
+ var COL={a:"var(--ink)",b:"var(--acc)",c:"var(--hot)"};
+ G.forEach(function(g,i){var y=top+i*rh;svg.appendChild(S("text",{x:L-14,y:y+16,"text-anchor":"end","font-size":"15",text:g[0]}));
+  svg.appendChild(S("rect",{class:"gx",style:"--d:"+(i+2),x:X(g[1]),y:y+2,width:X(g[2])-X(g[1]),height:20,rx:10,fill:COL[g[3]]}))});
+ MS.forEach(function(m,i){var x=X(m[0]);svg.appendChild(S("g",{class:"pop",style:"--d:"+(14+i*2)},S("path",{d:"M"+x+","+(top-26)+" l7,7 l-7,7 l-7,-7z",fill:"var(--hot)"}),S("text",{class:"m",x:x-12,y:top-15,"text-anchor":"end",style:"fill:var(--ink)",text:m[1]})))});
+ $("gantt").appendChild(svg);
+})();
+
+/* ---------- QUESTIONS ---------- */
+["How is territory split between this role and Cloud Distribution's team?","Is the Cloud Distribution agreement exclusive?","What does the current Saudi pipeline look like?","How are quota and commission set: partner-sourced vs direct?","What hosting options can we offer Saudi customers?","Arabic UI or docs, and which regional references can I use?"].forEach(function(q,i){$("qs").appendChild(h("div",{class:"q r",style:"--d:"+(i+2),text:q}))});
+
+/* ---------- SOURCES ---------- */
+[["S1","NCA Essential Cybersecurity Controls ECC-2:2024","https://cdn.nca.gov.sa/api/files/public/upload/86e09090-44e4-481f-bc28-355673607654_ECC--2024-EN.pdf"],["S2","NCA Cloud Cybersecurity Controls","https://nca.gov.sa/en/regulatory-documents/controls-list/ccc/"],["S3","SAMA Rulebook 3.3.5 Identity & Access Management","https://rulebook.sama.gov.sa/en/335-identity-and-access-management-0"],["S4","SDAIA PDPL guidelines","https://sdaia.gov.sa/en/Services/ServicesGuidelines/"],["S5","BIO-key & Cloud Distribution, 19 May 2025","https://www.globenewswire.com/news-release/2025/05/19/3083929/0/en/BIO-key-and-Cloud-Distribution-Co-Partner-to-Expand-IAM-and-Biometric-Security-Solutions-Across-the-Middle-East.html"],["S6","Middle East defence deployment, Nov 2025","https://www.bio-key.com/wp-content/uploads/2025/11/BIO-key-Secures-Significant-Identity-and-Biometric-Security-Deployment-with-a-Major-Middle-East-Defense-Sector-Organisation.pdf"],["S7","BIO-key & Maktabi Tech, 6 Aug 2026","https://www.globenewswire.com/news-release/2026/08/06/3340062/0/en/bio-key-and-maktabi-tech-partner-to-advance-identity-security-across-saudi-arabia-s-education-sector.html"],["S8","BIO-key & Al Majlis Group, Sep 2026","https://www.bio-key.com/wp-content/uploads/2026/09/BIO-key-Partners-with-Al-Majlis-Group-to-Expand-Identity-Security-Across-Arabian-Gulf.pdf"],["S9","Gov. security agency via IT Harmony, 13 Oct 2026","https://www.globenewswire.com/news-release/2026/10/13/3379358/0/en/bio-key-adds-new-middle-east-government-security-agency-customer-expanding-regional-footprint.html"],["S10","BIO-key & VaporVM, Nov 2025","https://www.bio-key.com/wp-content/uploads/2025/11/BIO-key-Partners-with-VaporVM-to-Expand-Reach-of-its-Advanced-Identity-and-Access-Management-and-Biometric-Cybersecurity-Solutions-in-Middle-East-and-Africa.pdf"],["S11","Gulf government contract via VaporVM, 22 Oct 2026","https://www.bio-key.com/wp-content/uploads/2026/10/BIO-key-Secures-Another-Middle-East-Government-Contract-for-its-Passwordless-Biometric-Identity-and-Access-Management-Solutions.pdf"],["S12","Saudi healthcare procurement provider, Sep 2022","https://info.bio-key.com/hubfs/Press%20Releases/BIO-key%20Press%20Release%20SSE%209-7-22.pdf"],["S13","Central Bank of Jordan, Jul 2026","https://www.bio-key.com/wp-content/uploads/2026/07/Central-Bank-of-Jordan-Selects-BIO-key-for-National-Biometric-Authentication-Initiative.pdf"],["S14","National Bank of Egypt via Raya IT","https://info.bio-key.com/hubfs/National%20Bank%20of%20Egypt%20Enhances%20Enterprise%20Security%20with%20%20%20Multi-Factor%20Authentication%20and%20Single%20Sign-On%20Solutions%20%20from%20BIO-key.pdf"],["S15","Ingram Micro KSA adds Okta","https://ingrammicrosaudi.com/articles/ingram-micro-expands-its-cyber-security-portfolio-with-okta/"],["S17","BIO-key About page (company claims)","https://www.bio-key.com/about/"],["D1","Bulwark Technologies","https://bulwark.biz/"],["D2","Spire Solutions","https://www.spiresolutions.com/"],["D2b","Spire & SAFCSP partnership, Apr 2022","https://securitymea.com/2022/04/04/spire-solutions-join-hands-with-saudi-federation-for-cybersecurity-programming-and-drones/"],["D3","Gulf IT Network Distribution","https://gulfitglobal.com/"],["D4","Fourth Dimension Systems (FDS)","https://www.fdsme.com/"]].forEach(function(s){$("srcs").appendChild(h("div",{class:"src"},h("span",{class:"id",text:s[0]}),h("div",{},h("b",{text:s[1]}),h("a",{href:s[2],target:"_blank",rel:"noopener noreferrer",text:s[2].replace(/^https?:\/\//,"").slice(0,80)+(s[2].length>88?"…":"")}))))});
+
+/* ---------- NAV, FIT-TO-SCREEN, REVEAL ---------- */
+var secs=Array.prototype.slice.call(document.querySelectorAll("main>section")),cur=0,railB=[];
+secs.forEach(function(s,i){var b=h("button",{type:"button","aria-label":"Go to "+s.dataset.name,onclick:function(){go(i)}},h("span",{text:String(i+1).padStart(2,"0")+" "+s.dataset.name}),h("i"));railB.push(b);$("rail").appendChild(b)});
+[["03","Me",2],["06","Market",5],["07","BIO-key today",6],["09","My plan",8]].forEach(function(t){$("toc").appendChild(h("button",{type:"button",onclick:function(){go(t[2])}},h("b",{text:t[0]}),t[1]))});
+
+var deckMQ=window.matchMedia("(min-width:900px) and (min-height:600px)");
+function fitAll(){secs.forEach(function(s){var w=s.querySelector(".wrap");w.style.transform="";if(!deckMQ.matches)return;var cs=getComputedStyle(s);var av=s.clientHeight-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom);var k=Math.min(1,av/w.offsetHeight);if(k<0.999)w.style.transform="scale("+k.toFixed(4)+")"})}
+var rt=null;window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(function(){fitAll();go(cur,true)},120)});
+fitAll();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fitAll);window.addEventListener("load",fitAll);
+
+function count(el){if(el._done)return;el._done=1;var to=+el.dataset.count,p=el.dataset.prefix||"",s=el.dataset.suffix||"";if(reduce){el.textContent=p+to+s;return}var t0=performance.now(),D=1400;(function f(now){var k=Math.min(1,(now-t0)/D),e=1-Math.pow(1-k,4);el.textContent=p+Math.round(to*e)+s;if(k<1)requestAnimationFrame(f)})(t0)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");e.target.querySelectorAll("[data-count]").forEach(count)}})},{threshold:.15});
+secs.forEach(function(s){io.observe(s)});
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=secs.indexOf(e.target);if(i!==cur){cur=i;sync()}}})},{threshold:.55});
+secs.forEach(function(s){co.observe(s)});
+function sync(){railB.forEach(function(b,i){b.setAttribute("aria-current",i===cur?"true":"false")});$("wNo").textContent=String(cur+1).padStart(2,"0")+" / "+secs.length;$("wName").textContent=secs[cur].dataset.name;$("wBar").style.transform="scaleX("+((cur+1)/secs.length)+")"}
+function go(i,instant){i=Math.max(0,Math.min(secs.length-1,i));cur=i;secs[i].scrollIntoView({behavior:(reduce||instant)?"auto":"smooth",block:"start"});sync()}
+$("prev").addEventListener("click",function(){go(cur-1)});$("next").addEventListener("click",function(){go(cur+1)});
+
+var lz=$("laser"),lb=$("laserBtn");
+function laser(){var on=document.body.classList.toggle("laser");lb.setAttribute("aria-pressed",on?"true":"false")}
+lb.addEventListener("click",laser);
+document.addEventListener("mousemove",function(e){if(document.body.classList.contains("laser"))lz.style.transform="translate("+e.clientX+"px,"+e.clientY+"px)"});
+document.addEventListener("mousedown",function(e){if(!document.body.classList.contains("laser")||reduce)return;var r=h("div",{class:"ripple",style:"left:"+e.clientX+"px;top:"+e.clientY+"px"});document.body.appendChild(r);setTimeout(function(){r.remove()},750)});
+
+document.addEventListener("keydown",function(e){var k=e.key;if(e.target&&/INPUT|TEXTAREA/.test(e.target.tagName))return;if(e.ctrlKey||e.metaKey||e.altKey)return;
+ if(k==="ArrowRight"||k==="ArrowDown"||k==="PageDown"||(k===" "&&!e.shiftKey)){e.preventDefault();go(cur+1)}
+ else if(k==="ArrowLeft"||k==="ArrowUp"||k==="PageUp"||(k===" "&&e.shiftKey)){e.preventDefault();go(cur-1)}
+ else if(k==="Home"){e.preventDefault();go(0)}else if(k==="End"){e.preventDefault();go(secs.length-1)}
+ else if(k==="l"||k==="L"){laser()}
+ else if(/^[1-9]$/.test(k)){go(+k-1)}});
+sync();
+})();
+</script>
+</body>
+</html>
