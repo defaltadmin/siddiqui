@@ -77,3 +77,10 @@ All text lives in `content/profile.js`. Structure:
 1. Add your slide object to `slides[]` with a unique `id` and `type`.
 2. In `assets/deck.js`, add a renderer function to the `R` object with that type name.
 3. The engine handles entrance animations, morph tracking and navigation automatically.
+
+## Mohammed Siddiqui · BIO-key (site in `bio-key/` folder)
+- A self-contained interview page for Mohammed Ahmed Siddiqui, Business Development Manager at BIO-key (Saudi Arabia).
+- Live: https://siddiqui.mscarabia.com/bio-key/
+- Hosting: Cloudflare Pages with output directory `bio-key`.
+- Files: `bio-key/index.html` (self-contained), `robots.txt`, `sitemap.xml`.
+- Notes: Page is marked noindex to keep it out of search results.
