@@ -1,0 +1,1715 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>BIO-key in Saudi Arabia: A Partner-Led Go-to-Market Plan · Mohammed Ahmed Siddiqui</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --paper:#EDE6D8;--card:#F7F2E8;--ink:#1F1B16;--mut:#544C42;--faint:#8C8478;--rule:#D3C8B4;
+ --acc:#0D6A4C;--acc-soft:#D2E0D0;--hot:#BB4C26;--hot-soft:#F1DACB;--blue:#2F5596;--amber:#8E5C08;--bar:#4A443B;
+ --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+ --sans:"Inter Tight",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+ --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+ --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--paper);scroll-behavior:smooth;scroll-snap-type:y proximity}
+body{font-family:var(--sans);font-size:17px;line-height:1.48;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--acc);text-underline-offset:3px}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--hot);outline-offset:3px;border-radius:6px}
+::selection{background:var(--acc-soft)}
+
+/* chrome */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(18px,4vw,48px);background:linear-gradient(var(--paper) 65%,rgba(237,230,216,0));pointer-events:none}
+.topbar>*{pointer-events:auto}
+.brand{font-family:var(--serif);font-size:1.35rem;letter-spacing:-.01em}
+.where{font-family:var(--mono);font-size:.84rem;color:var(--mut);display:flex;gap:10px;align-items:center}
+.where b{color:var(--ink);font-weight:500}
+.where .pbar{display:inline-block;width:110px;height:3px;background:var(--rule);position:relative;overflow:hidden;border-radius:2px}
+.where .pbar i{position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--acc);transform-origin:left;transform:scaleX(0);transition:transform .7s var(--ease)}
+.for{font-family:var(--mono);font-size:.82rem;color:var(--mut)}
+@media(max-width:760px){.for,.where .pbar{display:none}}
+
+.rail{position:fixed;right:clamp(10px,1.5vw,20px);top:50%;transform:translateY(-50%);z-index:30;display:flex;flex-direction:column;gap:5px}
+.rail button{display:flex;align-items:center;justify-content:flex-end;gap:9px;background:none;border:0;cursor:pointer;padding:2.5px 0}
+.rail span{font-family:var(--mono);font-size:.73rem;color:var(--mut);opacity:0;transform:translateX(6px);transition:opacity .35s var(--ease),transform .35s var(--ease);white-space:nowrap}
+.rail i{width:8.5px;height:8.5px;border-radius:50%;border:1.5px solid var(--faint);transition:all .35s var(--ease)}
+.rail button:hover span,.rail button[aria-current=true] span{opacity:1;transform:none}
+.rail button[aria-current=true] i{background:var(--acc);border-color:var(--acc);transform:scale(1.25)}
+.rail button[aria-current=true] span{color:var(--ink)}
+.rail button.lens-match i{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc-soft)}
+@media(max-width:900px){.rail{display:none}}
+
+.ctrl{position:fixed;left:clamp(18px,4vw,48px);bottom:14px;z-index:30;display:flex;gap:6px;align-items:center;font-family:var(--mono);font-size:.78rem;color:var(--mut);background:rgba(237,230,216,.92);backdrop-filter:blur(4px);padding:4px 10px 4px 4px;border-radius:99px;border:1px solid var(--rule)}
+.ctrl button{background:var(--card);border:1px solid var(--rule);border-radius:99px;padding:5px 11px;cursor:pointer;transition:transform .3s var(--ease),border-color .2s,background-color .2s,color .2s}
+.ctrl button:hover{border-color:var(--ink);transform:translateY(-2px)}
+.ctrl button[aria-pressed=true]{background:var(--hot);color:var(--card);border-color:var(--hot)}
+.ctrl .pdots{display:none;gap:5px;align-items:center;margin:0 6px}
+.ctrl .pdots button{width:8px;height:8px;padding:0;border-radius:50%;background:var(--rule);border:0}
+.ctrl .pdots button[aria-current=true]{background:var(--acc);transform:scale(1.3)}
+.ctrl .k{margin-left:6px}
+@media(max-width:760px){.ctrl .k,.ctrl .opt-l{display:none}}
+
+/* Present mode */
+body.present{overflow:hidden}
+body.present html{scroll-snap-type:none}
+body.present main>section{display:none;height:100vh!important;min-height:100vh!important;overflow:hidden!important;padding:72px clamp(24px,5vw,92px) 64px!important}
+body.present main>section.p-active{display:flex}
+body.present .ctrl .pdots{display:inline-flex}
+
+#laser{position:fixed;left:0;top:0;width:22px;height:22px;margin:-11px 0 0 -11px;border-radius:50%;background:rgba(187,76,38,.92);box-shadow:0 0 0 6px rgba(187,76,38,.2),0 0 24px rgba(187,76,38,.55);pointer-events:none;z-index:50;display:none;will-change:transform}
+body.laser #laser{display:block}
+body.laser{cursor:none}
+.ripple{position:fixed;width:16px;height:16px;margin:-8px 0 0 -8px;border:2px solid var(--hot);border-radius:50%;pointer-events:none;z-index:49;animation:rip .7s var(--ease) forwards}
+@keyframes rip{to{transform:scale(5);opacity:0}}
+
+/* layout */
+section{min-height:100vh;scroll-snap-align:start;display:flex;align-items:center;padding:86px clamp(18px,5.5vw,92px) 74px;position:relative;transition:box-shadow .4s var(--ease)}
+.wrap{width:100%;max-width:1240px;margin:0 auto;transform-origin:center top;position:relative}
+@media(min-width:900px) and (min-height:600px){
+ html{scroll-snap-type:y mandatory}
+ section{height:100vh;min-height:0;overflow:hidden;padding:68px clamp(42px,5.5vw,100px) 58px}
+}
+section.lens-hit .sh::after{content:"★ LENS FOCUS";font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;color:var(--acc);background:var(--acc-soft);border:1px solid var(--acc);padding:2px 8px;border-radius:99px;margin-left:auto}
+section.lens-hit .wrap::before{content:"";position:absolute;inset:-12px -16px;border:1.5px solid var(--acc);border-radius:18px;pointer-events:none;opacity:.45}
+
+.sh{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:.82rem;color:var(--mut);margin-bottom:10px;text-transform:uppercase;letter-spacing:.1em;flex-wrap:wrap}
+.sh .no{color:var(--acc);font-weight:500}
+.sh .ln{flex:0 0 52px;height:1px;background:var(--rule);transform-origin:left}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,4.7vw,4.5rem);line-height:.98;letter-spacing:-.022em;max-width:24ch}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,3.6vw,3.2rem);line-height:1.02;letter-spacing:-.02em;max-width:28ch}
+h2 em,h1 em{font-style:italic;color:var(--acc)}
+h3{font-size:1.04rem;font-weight:600;letter-spacing:-.01em}
+.lede{font-size:clamp(.96rem,1.2vw,1.08rem);color:var(--mut);max-width:64ch;margin-top:6px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px 18px}
+.mono{font-family:var(--mono);font-size:.79rem;color:var(--mut);letter-spacing:.01em}
+.tag{display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1px solid currentColor;white-space:nowrap;vertical-align:middle}
+.t-source{color:var(--acc)}.t-claim{color:var(--amber)}.t-inference{color:var(--blue)}.t-verify{color:var(--hot)}.t-cv{color:var(--ink)}
+.grid{display:grid;gap:14px}
+.mt{margin-top:16px}
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--sans);fill:var(--ink)}
+svg .m{font-family:var(--mono);fill:var(--mut);font-size:12px}
+.svg-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media(max-width:760px){
+ .svg-scroll svg{min-width:680px}
+ .svg-scroll.wide svg{min-width:820px}
+}
+
+/* motion */
+.r{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease),transform 1s var(--ease);transition-delay:calc(var(--d,0) * 70ms)}
+.in .r{opacity:1;transform:none}
+.in .sh .ln{animation:ln 1s var(--ease) both}
+@keyframes ln{from{transform:scaleX(0)}}
+.gx{transform:scaleX(0);transform-box:fill-box;transform-origin:left center;transition:transform 1.1s var(--ease);transition-delay:calc(var(--d,0) * 70ms + 220ms)}
+.gy{transform:scaleY(0);transform-box:fill-box;transform-origin:center bottom;transition:transform 1.2s var(--ease);transition-delay:calc(var(--d,0) * 110ms + 220ms)}
+.in .gx,.in .gy{transform:none}
+.pop{opacity:0;transform:scale(.3);transform-box:fill-box;transform-origin:center;transition:opacity .5s ease,transform .8s var(--ease);transition-delay:calc(var(--d,0) * 55ms + 180ms)}
+.in .pop{opacity:1;transform:none}
+.drw{stroke-dasharray:100;stroke-dashoffset:100;transition:stroke-dashoffset 1.5s var(--ease);transition-delay:calc(var(--d,0) * 55ms + 140ms)}
+.in .drw{stroke-dashoffset:var(--to,0)}
+.swap{animation:sw .45s var(--ease)}
+@keyframes sw{from{opacity:0;transform:translateY(6px)}}
+.lift{transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .25s}
+.lift:hover{transform:translateY(-3px);box-shadow:0 16px 32px -24px rgba(31,27,22,.38)}
+
+/* Single pulsing dot class + travelling dots */
+.pulse-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--acc);margin-right:9px;vertical-align:middle;animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.22}}
+.travel-dot{offset-rotate:0deg;animation:travel 5.5s var(--ease) infinite}
+@keyframes travel{0%{offset-distance:0%;opacity:0}10%{opacity:1}88%{opacity:1}100%{offset-distance:100%;opacity:0}}
+
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .r,.gx,.gy,.pop,.drw,.lift{transition:none!important}
+ .r,.pop{opacity:1!important;transform:none!important}
+ .gx,.gy{transform:none!important}
+ .drw{stroke-dashoffset:var(--to,0)!important}
+ .pulse-dot,.travel-dot,.swap{animation:none!important}
+ .scen-drawer{transition:none!important}
+ .scen-body{transition:none!important}
+ .scen-toggle{transition:none!important}
+}
+
+/* 01 HERO */
+.hero{position:relative}
+.hero-bg{position:absolute;right:0;top:6%;width:min(58vw,680px);height:auto;pointer-events:none;opacity:.38;z-index:0}
+.hero .wrap{z-index:1}
+.hero .kick{font-family:var(--mono);font-size:.82rem;color:var(--mut);letter-spacing:.06em;text-transform:uppercase;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.hero .open-line{font-family:var(--serif);font-style:italic;font-size:clamp(1.18rem,1.7vw,1.45rem);color:var(--acc);margin-top:8px}
+.hero h1{margin-top:10px}
+.hero .facts{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:14px;font-family:var(--mono);font-size:.83rem;color:var(--mut)}
+.hero .facts span::before{content:"— ";color:var(--acc)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1.5px solid var(--ink);border-bottom:1px solid var(--rule);margin-top:20px;padding-bottom:12px}
+.stat{padding:12px 14px 2px 0;border-right:1px solid var(--rule)}
+.stat:last-child{border-right:0}
+.stat+.stat{padding-left:14px}
+.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(2rem,3.4vw,3.1rem);line-height:1;letter-spacing:-.02em;white-space:nowrap}
+.stat span{display:block;font-size:.88rem;color:var(--mut);margin-top:5px}
+@media(max-width:760px){.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(3){padding-left:0;border-top:1px solid var(--rule);padding-top:10px}.stat:nth-child(4){border-top:1px solid var(--rule);padding-top:10px}}
+
+.lens-box{margin-top:16px;background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:12px 16px}
+.lens-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.lens-btns{display:flex;flex-wrap:wrap;gap:7px}
+.lens-btns button{background:var(--paper);border:1px solid var(--rule);border-radius:99px;padding:5px 13px;font-size:.86rem;font-weight:500;cursor:pointer;transition:all .25s var(--ease)}
+.lens-btns button:hover{border-color:var(--acc);color:var(--acc)}
+.lens-btns button[aria-pressed=true]{background:var(--acc);color:var(--card);border-color:var(--acc)}
+.lens-strip{margin-top:9px;padding-top:9px;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;font-size:.9rem}
+.lens-jumps{display:flex;flex-wrap:wrap;gap:6px}
+.lens-jumps button{background:none;border:1px solid var(--acc);color:var(--acc);border-radius:99px;padding:2px 10px;font-family:var(--mono);font-size:.73rem;cursor:pointer;transition:background .2s,color .2s}
+.lens-jumps button:hover{background:var(--acc);color:var(--card)}
+
+/* 02 WHY NOW */
+.why-layout{grid-template-columns:1.45fr 1fr;align-items:start;margin-top:12px}
+@media(max-width:960px){.why-layout{grid-template-columns:1fr}}
+.req-node{cursor:pointer}
+.req-node rect{transition:fill .25s,stroke .25s,stroke-width .25s}
+.req-node:hover rect,.req-node.active rect{fill:var(--acc-soft);stroke:var(--acc);stroke-width:2}
+.flow-curve{fill:none;stroke:var(--rule);stroke-width:1.8;transition:stroke .3s,stroke-width .3s,opacity .3s}
+.flow-curve.hi{stroke:var(--acc);stroke-width:3;opacity:1}
+.flow-curve.dim{opacity:.18}
+.req-bar{margin-top:10px;padding:11px 14px;background:var(--paper);border-left:3px solid var(--acc);border-radius:0 10px 10px 0;min-height:64px;display:flex;flex-direction:column;justify-content:center;gap:4px}
+.heat table{width:100%;border-collapse:collapse;font-size:.86rem;margin-top:8px}
+.heat th{font-family:var(--mono);font-weight:400;font-size:.72rem;color:var(--mut);text-align:center;padding:5px 4px}
+.heat th:first-child{text-align:left}
+.heat td{padding:6px 4px;border-top:1px solid var(--rule);text-align:center}
+.heat td:first-child{text-align:left;font-weight:500}
+.dot{display:inline-block;width:13px;height:13px;border-radius:50%;border:1.5px solid var(--acc);vertical-align:middle}
+.dot.f{background:var(--acc)}.dot.h{background:linear-gradient(90deg,var(--acc) 50%,transparent 50%)}.dot.o{border-color:var(--faint)}
+.note-strip{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:.84rem;color:var(--mut);margin-top:8px}
+
+/* 03 GULF MOMENTUM */
+.mom-top{grid-template-columns:1.75fr 1fr;align-items:stretch;margin-top:12px}
+@media(max-width:960px){.mom-top{grid-template-columns:1fr}}
+.ev{cursor:pointer}
+.ev circle{transition:transform .3s var(--ease);transform-box:fill-box;transform-origin:center}
+.ev:hover circle,.ev.active circle{transform:scale(1.38)}
+.ev-detail{margin-top:10px;padding:11px 14px;background:var(--paper);border:1px solid var(--rule);border-radius:10px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;font-size:.9rem}
+.callout{padding:12px 16px;border-left:3px solid var(--acc);background:var(--acc-soft);border-radius:0 10px 10px 0;font-size:.92rem;margin-top:10px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.82rem;color:var(--mut);margin-top:8px;align-items:center}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:middle}
+
+/* 04 PARTNER MODEL */
+.part-grid{grid-template-columns:1.35fr 1fr;align-items:start;margin-top:12px}
+@media(max-width:960px){.part-grid{grid-template-columns:1fr}}
+.spoke-node{cursor:pointer}
+.spoke-node circle{transition:transform .35s var(--ease),stroke-width .25s;transform-box:fill-box;transform-origin:center}
+.spoke-node:hover circle,.spoke-node.active circle{transform:scale(1.18);stroke:var(--ink);stroke-width:2.5}
+.toggle-row{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;align-items:center}
+.toggle-row button{background:var(--paper);border:1px solid var(--rule);border-radius:99px;padding:5px 13px;font-size:.84rem;cursor:pointer;transition:all .25s}
+.toggle-row button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.rules-list{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:8px;font-size:.88rem}
+.rules-list li{padding-left:16px;position:relative}
+.rules-list li::before{content:"→";position:absolute;left:0;color:var(--acc);font-family:var(--mono)}
+
+/* 05 SECTOR PLAYBOOKS */
+.sec-tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:14px}
+@media(max-width:860px){.sec-tabs{grid-template-columns:repeat(2,1fr)}}
+.sec-tab{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:12px;text-align:left;cursor:pointer;transition:all .3s var(--ease);display:flex;flex-direction:column;gap:4px}
+.sec-tab:hover{border-color:var(--acc);transform:translateY(-2px)}
+.sec-tab[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.sec-tab[aria-pressed=true] .mono{color:var(--acc-soft)}
+.play-Stage{grid-template-columns:1.15fr 1fr;margin-top:12px;align-items:stretch}
+@media(max-width:900px){.play-Stage{grid-template-columns:1fr}}
+.kv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+@media(max-width:680px){.kv-grid{grid-template-columns:1fr}}
+.kv-box{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:11px 13px}
+.kv-box .mono{display:block;margin-bottom:4px;color:var(--acc)}
+.dq-list{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.dq-list li{padding:8px 11px;background:var(--paper);border-radius:8px;border-left:2.5px solid var(--acc);font-size:.9rem}
+
+/* 06 COMPETITIVE POSITION */
+.cmp-layout{grid-template-columns:1.25fr 1fr;margin-top:12px;align-items:start}
+@media(max-width:960px){.cmp-layout{grid-template-columns:1fr}}
+.cp circle{transition:transform .35s var(--ease);transform-box:fill-box;transform-origin:center}
+.cp:hover circle{transform:scale(1.45)}
+.wl{list-style:none;display:flex;flex-direction:column;gap:5px;margin-top:6px;font-size:.88rem}
+.wl li{padding-left:18px;position:relative}
+.wl li::before{content:"+";position:absolute;left:0;color:var(--acc);font-weight:700}
+.wl.neg li::before{content:"−";color:var(--hot)}
+.fact-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.fact-chip{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:5px 9px;font-size:.8rem}
+
+/* 07 SAUDI PROCUREMENT PATH */
+.proc-cards{grid-template-columns:1fr 1fr;margin-top:12px}
+@media(max-width:860px){.proc-cards{grid-template-columns:1fr}}
+.proc-step-node{cursor:pointer}
+.proc-step-node circle{transition:transform .3s var(--ease);transform-box:fill-box;transform-origin:center}
+.proc-step-node:hover circle{transform:scale(1.2)}
+.proc-detail-box{margin-top:10px;padding:10px 14px;background:var(--paper);border-left:3px solid var(--acc);border-radius:0 8px 8px 0;font-size:.88rem}
+
+/* 08 OPPORTUNITY SCORECARD */
+.score-grid{grid-template-columns:1.35fr 1fr;margin-top:14px;align-items:center}
+@media(max-width:900px){.score-grid{grid-template-columns:1fr}}
+.toggles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:640px){.toggles{grid-template-columns:1fr}}
+.sc-btn{display:flex;align-items:center;gap:11px;background:var(--card);border:1.5px solid var(--rule);border-radius:12px;padding:12px 14px;text-align:left;cursor:pointer;transition:all .25s var(--ease)}
+.sc-btn:hover{border-color:var(--ink)}
+.sc-btn[aria-pressed=true]{border-color:var(--acc);background:var(--acc-soft)}
+.sc-box{width:22px;height:22px;border-radius:6px;border:1.5px solid var(--mut);display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;font-family:var(--mono);font-size:.82rem;background:var(--paper)}
+.sc-btn[aria-pressed=true] .sc-box{background:var(--acc);border-color:var(--acc);color:var(--card)}
+
+/* 09 SCENARIO CARDS - FLUID ACCORDION */
+.scen-grid{grid-template-columns:repeat(3,1fr);margin-top:12px;align-items:start}
+@media(max-width:960px){.scen-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.scen-grid{grid-template-columns:1fr}}
+
+.scen-card{
+ cursor:pointer;
+ display:flex;
+ flex-direction:column;
+ transition:border-color .3s var(--ease),box-shadow .3s var(--ease),transform .3s var(--ease);
+ position:relative;
+ user-select:none;
+}
+.scen-card:hover{
+ border-color:var(--acc);
+ transform:translateY(-2px);
+ box-shadow:0 12px 28px -18px rgba(31,27,22,.28);
+}
+.scen-card[aria-expanded=true]{
+ border-color:var(--acc);
+ box-shadow:0 8px 24px -12px rgba(13,106,76,.2), inset 0 0 0 1px var(--acc);
+}
+.scen-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.scen-head h3{font-size:1.02rem;line-height:1.25}
+
+/* Smooth toggle badge (+ to -) */
+.scen-toggle{
+ width:26px;
+ height:26px;
+ border-radius:50%;
+ background:var(--paper);
+ border:1px solid var(--rule);
+ color:var(--acc);
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ flex-shrink:0;
+ margin-top:2px;
+ transition:transform .35s var(--ease),background .25s,border-color .25s,color .25s;
+}
+.scen-card:hover .scen-toggle{border-color:var(--acc)}
+.scen-card[aria-expanded=true] .scen-toggle{
+ background:var(--acc);
+ color:var(--card);
+ border-color:var(--acc);
+ transform:rotate(90deg);
+}
+.scen-icon{
+ position:relative;
+ width:12px;
+ height:12px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+}
+.scen-icon::before,.scen-icon::after{
+ content:"";
+ position:absolute;
+ background:currentColor;
+ border-radius:1px;
+ transition:transform .35s var(--ease),opacity .25s;
+}
+.scen-icon::before{width:12px;height:2px}
+.scen-icon::after{width:2px;height:12px}
+.scen-card[aria-expanded=true] .scen-icon::after{
+ transform:scaleY(0);
+ opacity:0;
+}
+
+/* Fluid CSS Grid animation: 0fr -> 1fr */
+.scen-drawer{
+ display:grid;
+ grid-template-rows:0fr;
+ transition:grid-template-rows .38s cubic-bezier(.16,1,.3,1);
+}
+.scen-card[aria-expanded=true] .scen-drawer{
+ grid-template-rows:1fr;
+}
+.scen-body{
+ overflow:hidden;
+ display:flex;
+ flex-direction:column;
+ gap:6px;
+ font-size:.85rem;
+ opacity:0;
+ transform:translateY(-6px);
+ transition:opacity .28s var(--ease),transform .35s var(--ease);
+}
+.scen-card[aria-expanded=true] .scen-body{
+ opacity:1;
+ transform:translateY(0);
+}
+.scen-inner{
+ margin-top:10px;
+ padding-top:10px;
+ border-top:1px solid var(--rule);
+ display:flex;
+ flex-direction:column;
+ gap:6px;
+}
+.scen-step b{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;color:var(--acc);display:block}
+.scen-sig b{color:var(--hot)}
+
+/* 10 FIRST 90 DAYS */
+.phase-chips{grid-template-columns:repeat(3,1fr);margin-top:10px}
+@media(max-width:860px){.phase-chips{grid-template-columns:1fr}}
+.p-col{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:12px 14px}
+.p-col h3{font-family:var(--serif);font-weight:400;font-size:1.35rem;display:flex;justify-content:space-between;align-items:baseline}
+.chip-list{display:flex;flex-direction:column;gap:6px;margin-top:8px}
+.t-chip{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:6px 10px;font-size:.83rem}
+
+/* 11 TRACK RECORD & HONEST GAP */
+.rec-grid{grid-template-columns:repeat(3,1fr);margin-top:12px}
+@media(max-width:960px){.rec-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.rec-grid{grid-template-columns:1fr}}
+.gapc{border:2px solid var(--hot);background:var(--card)}
+.gapc h3{font-family:var(--serif);font-weight:400;font-size:1.55rem;line-height:1.1}
+.gapc ul{list-style:none;margin-top:8px;display:flex;flex-direction:column;gap:5px;font-size:.86rem}
+.gapc li{padding-left:15px;position:relative}
+.gapc li::before{content:"•";position:absolute;left:0;color:var(--hot);font-weight:700}
+
+/* 12 QUESTIONS & CLOSING */
+.qs{grid-template-columns:1fr 1fr;margin-top:16px;counter-reset:q;column-gap:24px}
+@media(max-width:900px){.qs{grid-template-columns:1fr}}
+.q{padding:14px 16px 14px 56px;position:relative;font-size:1rem;border-top:1px solid var(--rule)}
+.q::before{counter-increment:q;content:counter(q,decimal-leading-zero);position:absolute;left:10px;top:11px;font-family:var(--serif);font-size:1.9rem;line-height:1;color:var(--acc)}
+.close{margin-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:18px;border-top:1.5px solid var(--ink);padding-top:18px}
+.close .thx{font-family:var(--serif);font-size:clamp(2.2rem,3.8vw,3.2rem);line-height:1}
+.close .ct{font-family:var(--mono);font-size:.88rem;display:flex;flex-direction:column;gap:4px;text-align:right}
+@media(max-width:640px){.close .ct{text-align:left}}
+
+/* 13 SOURCES */
+.srcs{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));margin-top:12px;gap:0 24px}
+.src{border-top:1px solid var(--rule);padding:6px 0;font-size:.83rem;display:grid;grid-template-columns:42px 1fr;gap:6px}
+.src .id{font-family:var(--mono);color:var(--acc);font-size:.76rem}
+.disc{margin-top:14px;font-size:.82rem;color:var(--mut);max-width:95ch}
+
+/* print */
+@media print{
+ @page{size:A4 landscape;margin:10mm}
+ .topbar,.rail,.ctrl,#laser{display:none!important}
+ html,body{scroll-snap-type:none!important;overflow:visible!important;height:auto!important}
+ main>section{display:block!important;height:auto!important;min-height:auto!important;overflow:visible!important;break-after:page;padding:8mm 0!important}
+ .wrap{transform:none!important}
+ .r,.pop{opacity:1!important;transform:none!important}
+ .gx,.gy{transform:none!important}
+ .drw{stroke-dashoffset:var(--to,0)!important}
+ .scen-drawer{grid-template-rows:1fr!important;display:block!important}
+ .scen-body{opacity:1!important;transform:none!important}
+ .travel-dot,.pulse-dot{animation:none!important}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="brand">M. A. Siddiqui · BIO-key GTM</div>
+ <div class="where" aria-live="polite"><span id="wNo">01 / 13</span><b id="wName">Plan</b><span class="pbar"><i id="wBar"></i></span></div>
+ <div class="for">9 Nov 2026 · Final Round</div>
+</header>
+<nav class="rail" id="rail" aria-label="Sections"></nav>
+
+<div class="ctrl" id="ctrl">
+ <button type="button" id="prev" aria-label="Previous section">←</button>
+ <button type="button" id="next" aria-label="Next section">→</button>
+ <div class="pdots" id="pdots" role="group" aria-label="Slide progress"></div>
+ <button type="button" id="presentBtn" aria-pressed="false">Present</button>
+ <button type="button" class="opt-l" id="laserBtn" aria-pressed="false">Pointer</button>
+ <span class="k">← → move · P present · L pointer</span>
+</div>
+<div id="laser" aria-hidden="true"></div>
+
+<main id="main">
+<!-- 01 HERO -->
+<section id="s-hero" data-name="Intro" class="hero">
+ <svg class="hero-bg" viewBox="0 0 640 420" aria-hidden="true">
+  <title>Signal motif of connected compliance and partner nodes</title>
+  <g fill="none" stroke="var(--acc)" stroke-width="1.2">
+   <path class="drw" pathLength="100" style="--d:1" d="M40,340 C160,320 220,220 340,210 C440,200 500,110 610,70"/>
+   <path class="drw" pathLength="100" style="--d:3" d="M90,110 C200,140 250,200 340,210 C430,220 490,280 600,310"/>
+   <path class="drw" pathLength="100" style="--d:5" d="M210,380 C260,300 300,250 340,210 C390,160 430,90 510,40"/>
+  </g>
+  <g fill="var(--acc)">
+   <circle class="pop" style="--d:2" cx="40" cy="340" r="4"/>
+   <circle class="pop" style="--d:4" cx="90" cy="110" r="4"/>
+   <circle class="pop" style="--d:6" cx="205" cy="245" r="5"/>
+   <circle class="pop" style="--d:8" cx="340" cy="210" r="8"/>
+   <circle class="pop" style="--d:10" cx="475" cy="145" r="5"/>
+   <circle class="pop" style="--d:12" cx="610" cy="70" r="4.5"/>
+   <circle class="pop" style="--d:13" cx="600" cy="310" r="4.5"/>
+   <circle class="pop" style="--d:14" cx="510" cy="40" r="4"/>
+  </g>
+ </svg>
+ <div class="wrap">
+  <div class="kick r">
+   <span>BIO-key in Saudi Arabia: A Partner-Led Go-to-Market Plan</span>
+   <span class="tag t-inference">Proposal for discussion</span>
+  </div>
+  <p class="open-line r" style="--d:1"><span class="pulse-dot" aria-hidden="true"></span>Please stop me at any point. I'm happy to go wherever is most useful.</p>
+  <h1 class="r" style="--d:2">Compliance is creating demand. Partners are creating access. <em>Here's how I'd connect them.</em></h1>
+  <div class="facts r" style="--d:3">
+   <span>Mohammed Ahmed Siddiqui</span>
+   <span>Riyadh</span>
+   <span>Transferable Iqama</span>
+   <span>Registered Engineer (SCE)</span>
+   <span>MSc Telecom Engineering, King Saud University</span>
+  </div>
+  <div class="stats r" style="--d:4">
+   <div class="stat"><b data-count="8" data-suffix="+">8+</b><span>years of B2B sales in Saudi Arabia <span class="tag t-cv">Per CV</span></span></div>
+   <div class="stat"><b data-count="50" data-suffix="+">50+</b><span>system integrators <span class="tag t-cv">Per CV</span></span></div>
+   <div class="stat"><b data-count="35" data-prefix="$15–" data-suffix="M">$15–35M</b><span>pipeline identified (~80% self-sourced) <span class="tag t-cv">Per CV</span></span></div>
+   <div class="stat"><b data-count="117" data-suffix="%">117%</b><span>of last year's USD 1.5M target <span class="tag t-cv">Per CV</span></span></div>
+  </div>
+  <div class="lens-box r" style="--d:5" role="region" aria-label="Interviewer lens selector">
+   <div class="lens-top">
+    <span class="mono">Choose an interview lens (outlines priority sections):</span>
+    <div class="lens-btns" id="lensBtns"></div>
+   </div>
+   <div class="lens-strip" id="lensStrip" aria-live="polite"></div>
+  </div>
+ </div>
+</section>
+
+<!-- 02 WHY NOW: REGULATION TO CAPABILITY -->
+<section id="s-why" data-name="Why now">
+ <div class="wrap">
+  <div class="sh r"><span class="no">02</span><span class="ln"></span><span>Why now · Regulation to capability</span></div>
+  <h2 class="r" style="--d:1">Saudi mandates map directly to <em>biometric &amp; adaptive MFA.</em></h2>
+  <div class="grid why-layout">
+   <div class="card r" style="--d:2">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;flex-wrap:wrap;gap:6px">
+     <span class="mono">Tap or hover a regulatory trigger to trace capability fit</span>
+     <span class="tag t-source">Source · S1–S4</span>
+    </div>
+    <div class="svg-scroll" id="reqFlowWrap"></div>
+    <div class="req-bar" id="reqExplain" aria-live="polite"></div>
+   </div>
+   <div class="r" style="--d:3;display:flex;flex-direction:column;gap:12px">
+    <div class="card heat">
+     <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
+      <span class="mono">Sector × regulation pull</span>
+      <span class="tag t-inference">My reading</span>
+     </div>
+     <div id="heatGrid"></div>
+     <div class="legend">
+      <span><span class="dot f" style="width:10px;height:10px;margin-right:5px"></span>Primary trigger</span>
+      <span><span class="dot h" style="width:10px;height:10px;margin-right:5px"></span>Partial / contextual</span>
+      <span><span class="dot o" style="width:10px;height:10px;margin-right:5px"></span>Not primary</span>
+     </div>
+    </div>
+    <div class="card">
+     <div style="display:flex;justify-content:space-between;align-items:center">
+      <span class="mono">ECC 2-2-3-4 · Privileged access management</span>
+      <span class="tag t-source">Source · S1</span>
+     </div>
+     <p style="font-size:.9rem;margin-top:6px">BIO-key strengthens the MFA layer around PAM; <b>it is not a PAM vault.</b> Partner alongside PAM deployments rather than replacing them.</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 03 GULF MOMENTUM -->
+<section id="s-momentum" data-name="Gulf momentum">
+ <div class="wrap">
+  <div class="sh r"><span class="no">03</span><span class="ln"></span><span>Gulf momentum · Public releases</span></div>
+  <h2 class="r" style="--d:1">Eight regional milestones — <em>five between Jul and Oct 2026.</em></h2>
+  <div class="card r mt" style="--d:2;padding:14px 18px">
+   <div class="svg-scroll wide" id="momTimeline"></div>
+   <div class="ev-detail" id="evDetail" aria-live="polite"></div>
+   <div class="legend">
+    <span><i style="background:var(--acc)"></i>Saudi Arabia</span>
+    <span><i style="background:var(--blue)"></i>Regional or product</span>
+    <span><i style="background:var(--card);border:2.5px solid var(--hot)"></i>Middle East (country undisclosed)</span>
+    <span style="margin-left:auto" class="tag t-source">All 8 events · Source S5–S12</span>
+   </div>
+  </div>
+  <div class="grid mom-top">
+   <div class="callout r" style="--d:3">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+     <span class="mono" style="color:var(--acc)">Takeaway</span>
+     <span class="tag t-inference">My reading</span>
+    </div>
+    <b>Pattern:</b> Gulf government wins are partner-delivered, move fast when the buyer has a compliance driver, and are mostly undisclosed. The Saudi job is to repeat this with named partners and named buyers.
+   </div>
+   <div class="card r" style="--d:4;display:flex;align-items:center;justify-content:space-between;gap:14px">
+    <div>
+     <span class="mono">Tracked releases / half-year</span>
+     <div style="font-size:.8rem;color:var(--mut);margin-top:4px">Computed only from the 8 listed events (to 22 Oct 2026; releases I tracked, not exhaustive).</div>
+    </div>
+    <div style="width:210px;flex-shrink:0" id="paceBar"></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 04 PARTNER MODEL -->
+<section id="s-partner" data-name="Partner model">
+ <div class="wrap">
+  <div class="sh r"><span class="no">04</span><span class="ln"></span><span>Partner model · Hub and spoke</span></div>
+  <h2 class="r" style="--d:1">One account owner per deal, <em>anchored on Cloud Distribution.</em></h2>
+  <div class="grid part-grid">
+   <div class="card r" style="--d:2">
+    <div class="toggle-row">
+     <button type="button" id="btnHubView" aria-pressed="true">Proposed BIO-key model</button>
+     <button type="button" id="btnNetView" aria-pressed="false">My network today (50+ SIs · 2 VADs · 10 OEMs)</button>
+     <span class="tag t-inference" id="partViewTag">Proposed engagement model (mine)</span>
+    </div>
+    <div class="svg-scroll" id="hubSvgWrap"></div>
+    <div class="svg-scroll" id="netSvgWrap" style="display:none"></div>
+   </div>
+   <div class="r" style="--d:3;display:flex;flex-direction:column;gap:12px">
+    <div class="card" id="spokeCard" aria-live="polite"></div>
+    <div class="card">
+     <div style="display:flex;justify-content:space-between;align-items:center">
+      <span class="mono">Lead flow · From intro to PoC</span>
+      <span class="tag t-inference">Proposal (mine)</span>
+     </div>
+     <div class="svg-scroll" id="leadFlowSvg" style="margin-top:8px"></div>
+     <ul class="rules-list">
+      <li><b>One account owner</b> per opportunity</li>
+      <li><b>Deal registration</b> before pre-sales effort</li>
+      <li><b>Fortnightly</b> joint pipeline review</li>
+     </ul>
+     <div style="margin-top:8px;padding-top:8px;border-top:1px solid var(--rule);font-size:.85rem;color:var(--mut)">
+      <b>Principle:</b> Cloud Distribution stays the anchor; any added distributor must fill a gap and only after rules of engagement are agreed.
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 05 SECTOR PLAYBOOKS -->
+<section id="s-sectors" data-name="Sector playbooks">
+ <div class="wrap">
+  <div class="sh r"><span class="no">05</span><span class="ln"></span><span>Sector playbooks · Where to hunt</span></div>
+  <h2 class="r" style="--d:1">Five Saudi verticals, <em>each led by a specific trigger and partner.</em></h2>
+  <div class="sec-tabs r" style="--d:2" id="secTabs" role="group" aria-label="Target sectors"></div>
+  <div class="grid play-Stage r" style="--d:3">
+   <div class="card" id="secStage" aria-live="polite"></div>
+   <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+     <span class="mono">Four core discovery questions (every call)</span>
+     <span class="tag t-inference">My reading</span>
+    </div>
+    <ul class="dq-list" id="dqAll"></ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 06 COMPETITIVE POSITION -->
+<section id="s-compete" data-name="Competition">
+ <div class="wrap">
+  <div class="sh r"><span class="no">06</span><span class="ln"></span><span>Competitive position · Complement, don't attack</span></div>
+  <h2 class="r" style="--d:1">Win where biometrics, on-premise control &amp; <em>shared workstations matter.</em></h2>
+  <div class="grid cmp-layout">
+   <div class="card r" style="--d:2">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+     <span class="mono">2-axis positioning map</span>
+     <span class="tag t-inference">My reading</span>
+    </div>
+    <div class="svg-scroll" id="cmpMap"></div>
+   </div>
+   <div class="r" style="--d:3;display:flex;flex-direction:column;gap:10px">
+    <div class="card">
+     <div style="display:flex;justify-content:space-between;align-items:center">
+      <span class="mono">PeerSpot Apr 2026 IAM mindshare</span>
+      <span class="tag t-source">Source · S13</span>
+     </div>
+     <div id="mindshareBars" style="margin-top:8px"></div>
+     <div class="fact-chips">
+      <span class="fact-chip">Entra: Saudi cloud region slated Q4 2026 <span class="tag t-source">Source</span></span>
+      <span class="fact-chip">Ingram Micro Saudi added Okta <span class="tag t-source">Source · S14</span></span>
+      <span class="fact-chip">CyberArk: Saudi ~40% of ME business in 2024 <span class="tag t-source">Source · S15</span></span>
+      <span class="fact-chip">Axidian markets NCA ECC-2:2024 mapping <span class="tag t-source">Source</span></span>
+      <span class="fact-chip">Saviynt KSA residency 1 Oct 2026 (Google Cloud Dammam) <span class="tag t-source">Source · S16</span></span>
+     </div>
+    </div>
+    <div class="grid" style="grid-template-columns:1fr 1fr;gap:10px">
+     <div class="card">
+      <h3>Should win <span class="tag t-inference">My reading</span></h3>
+      <ul class="wl">
+       <li>On-premise or air-gapped</li>
+       <li>Defence &amp; government</li>
+       <li>Shared workstations</li>
+       <li>Phone-free staff</li>
+      </ul>
+     </div>
+     <div class="card">
+      <h3>Don't force <span class="tag t-inference">My reading</span></h3>
+      <ul class="wl neg">
+       <li>Microsoft estates where Entra is "free"</li>
+       <li>Pure cloud SSO</li>
+       <li>Deep PAM (partner instead)</li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 07 SAUDI PROCUREMENT PATH -->
+<section id="s-procurement" data-name="Procurement">
+ <div class="wrap">
+  <div class="sh r"><span class="no">07</span><span class="ln"></span><span>Saudi procurement path · How deals close</span></div>
+  <h2 class="r" style="--d:1">Shape the specification early and <em>transact through local partners.</em></h2>
+  <div class="card r mt" style="--d:2">
+   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:6px">
+    <span class="mono">Standard Saudi public &amp; enterprise procurement sequence (tap any step for details)</span>
+    <span class="tag t-inference">My reading</span>
+   </div>
+   <div class="svg-scroll" id="procSvg"></div>
+   <div class="proc-detail-box" id="procDetail" aria-live="polite"></div>
+  </div>
+  <div class="grid proc-cards">
+   <div class="card r" style="--d:3">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+     <span class="mono">Regional HQ rules &amp; Etimad exemption</span>
+     <span class="tag t-source">Source · S17</span>
+    </div>
+    <p style="font-size:.92rem;margin-top:8px">Since early 2024 government bodies could not contract foreign firms without a Saudi regional HQ; in <b>Feb 2026</b> an exemption route opened through Etimad; more than <b>700 firms</b> have moved regional HQs to Saudi.</p>
+   </div>
+   <div class="card r" style="--d:4">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+     <span class="mono">Local content &amp; procurement law update</span>
+     <span class="tag t-source">Source · S18</span>
+    </div>
+    <p style="font-size:.92rem;margin-top:8px">Local-content rules apply; a new <b>Government Tenders and Procurement Law</b> was approved on <b>5 Aug 2026</b> and its effect is still unclear <span class="tag t-verify">To verify</span>. <b>Conclusion:</b> use registered local partners and influence the specification early.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 08 OPPORTUNITY SCORECARD -->
+<section id="s-scorecard" data-name="Scorecard">
+ <div class="wrap">
+  <div class="sh r"><span class="no">08</span><span class="ln"></span><span>Opportunity scorecard · Deal qualification</span></div>
+  <h2 class="r" style="--d:1">Protect pre-sales capacity with a <em>six-point gate.</em></h2>
+  <div class="grid score-grid">
+   <div class="r" style="--d:2">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+     <span class="mono">Toggle criteria met on a live opportunity (Enter or click)</span>
+     <span class="tag t-inference">My qualification framework</span>
+    </div>
+    <div class="toggles" id="scoreToggles"></div>
+   </div>
+   <div class="card r" style="--d:3;text-align:center;padding:22px" aria-live="polite">
+    <span class="mono">Qualification verdict</span>
+    <div style="max-width:240px;margin:10px auto" id="scoreRing"></div>
+    <div id="scoreVerdict" style="font-family:var(--serif);font-size:2rem;line-height:1.05"></div>
+    <p id="scoreAction" style="color:var(--mut);font-size:.94rem;margin-top:8px"></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 09 SCENARIO CARDS -->
+<section id="s-scenarios" data-name="Scenarios">
+ <div class="wrap">
+  <div class="sh r"><span class="no">09</span><span class="ln"></span><span>Scenario cards · How I'd handle it</span></div>
+  <h2 class="r" style="--d:1">Six field situations and <em>my first two moves.</em></h2>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px;flex-wrap:wrap;gap:8px">
+   <span class="mono">Click or press Enter on any card to inspect moves &amp; success signal</span>
+   <button type="button" id="toggleAllScen" class="tag t-inference" style="cursor:pointer;background:var(--card)">Expand all 6</button>
+  </div>
+  <div class="grid scen-grid" id="scenGrid"></div>
+ </div>
+</section>
+
+<!-- 10 FIRST 90 DAYS -->
+<section id="s-plan" data-name="First 90 days">
+ <div class="wrap">
+  <div class="sh r"><span class="no">10</span><span class="ln"></span><span>First 90 days · Execution roadmap</span></div>
+  <h2 class="r" style="--d:1">Learn &amp; map, activate the channel, <em>convert into PoC &amp; forecast.</em></h2>
+  <div class="card r mt" style="--d:2;padding:14px 18px">
+   <div class="svg-scroll" id="ganttSvg"></div>
+  </div>
+  <div class="grid phase-chips r" style="--d:3" id="phaseCols"></div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:8px">
+   <span class="mono">Proposal for discussion. Targets to be agreed with BIO-key.</span>
+   <span class="tag t-inference">Proposal (mine)</span>
+  </div>
+ </div>
+</section>
+
+<!-- 11 TRACK RECORD AND HONEST GAP -->
+<section id="s-record" data-name="Track record">
+ <div class="wrap">
+  <div class="sh r"><span class="no">11</span><span class="ln"></span><span>Track record &amp; honest gap · CV facts only</span></div>
+  <h2 class="r" style="--d:1">Proven Saudi channel execution, <em>and a 30-day plan for my one gap.</em></h2>
+  <div class="grid rec-grid">
+   <div class="card r" style="--d:2">
+    <div style="display:flex;justify-content:space-between"><span class="mono">Identified pipeline</span><span class="tag t-cv">Per CV</span></div>
+    <div id="recPipe"></div>
+    <div style="font-size:.82rem;color:var(--mut)">$15M to $35M (+133%) identified pipeline.</div>
+   </div>
+   <div class="card r" style="--d:3">
+    <div style="display:flex;justify-content:space-between"><span class="mono">Pipeline sourcing &amp; quota</span><span class="tag t-cv">Per CV</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:center" id="recDonutGauge"></div>
+    <div style="font-size:.82rem;color:var(--mut)">~80% self-sourced · 117% of USD 1.5M target.</div>
+   </div>
+   <div class="card r" style="--d:4">
+    <div style="display:flex;justify-content:space-between"><span class="mono">Active partner coverage</span><span class="tag t-cv">Per CV</span></div>
+    <div id="recDots" style="margin-top:6px"></div>
+    <div style="font-size:.82rem;color:var(--mut);margin-top:4px">~50 system integrators (small dots) &amp; 2 distributors (large dots).</div>
+   </div>
+   <div class="card r" style="--d:5">
+    <div style="display:flex;justify-content:space-between"><span class="mono">Nuevo track record</span><span class="tag t-cv">Per CV</span></div>
+    <div style="font-family:var(--serif);font-size:2.1rem;line-height:1.05;margin-top:6px">SAR 4M+ closed</div>
+    <p style="font-size:.86rem;color:var(--mut);margin-top:4px">Largest deal ~SAR 1.25M · #1 by monthly sales value three times.</p>
+   </div>
+   <div class="card r" style="--d:6">
+    <div style="display:flex;justify-content:space-between"><span class="mono">Credentials &amp; domain</span><span class="tag t-cv">Per CV</span></div>
+    <ul class="rules-list" style="margin-top:6px">
+     <li>Compliance-led selling around NCA ECC, PDPL and SAMA CSF</li>
+     <li>MSc Telecommunications Engineering · Registered Engineer (SCE)</li>
+     <li>Jamf MDM, GRC and SSO work with clients</li>
+    </ul>
+   </div>
+   <div class="card gapc r" style="--d:7">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+     <span class="tag t-verify">Honest gap</span>
+     <span class="mono">30-day closure plan</span>
+    </div>
+    <h3 style="margin-top:6px">"I haven't sold identity software yet."</h3>
+    <ul>
+     <li>Training &amp; certification in month one; joint calls with Cloud Distribution pre-sales; lead with ECC 2-2-3, the requirement I already sell to.</li>
+     <li><b>To confirm in my first 30 days:</b> [local hosting options], [Arabic interface and documentation], [proof-of-concept environment].</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 12 QUESTIONS AND CLOSING -->
+<section id="s-questions" data-name="Questions">
+ <div class="wrap">
+  <div class="sh r"><span class="no">12</span><span class="ln"></span><span>Questions &amp; closing</span></div>
+  <h2 class="r" style="--d:1">Six questions to align on <em>expectations from day one.</em></h2>
+  <div class="grid qs" id="qsList"></div>
+  <div class="close r" style="--d:8">
+   <div>
+    <div class="thx">Thank you.</div>
+    <div style="font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--mut);margin-top:6px"><span class="pulse-dot" aria-hidden="true"></span>Questions &amp; discussion</div>
+   </div>
+   <div class="ct">
+    <a href="mailto:mahs545@gmail.com">mahs545@gmail.com</a>
+    <a href="https://linkedin.com/in/mohammed-ahmed-siddiqui" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohammed-ahmed-siddiqui</a>
+    <span style="color:var(--mut)">Riyadh, Saudi Arabia</span>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- 13 SOURCES -->
+<section id="s-sources" data-name="Sources">
+ <div class="wrap">
+  <div class="sh r"><span class="no">13</span><span class="ln"></span><span>Sources &amp; citations</span></div>
+  <h2 class="r" style="--d:1">Public primary sources, <em>company claims &amp; my reading.</em></h2>
+  <div class="legend r" style="--d:2">
+   <span><span class="tag t-source">Source</span> Public primary source</span>
+   <span><span class="tag t-claim">Company claim</span> Vendor statement</span>
+   <span><span class="tag t-inference">My reading</span> Candidate inference / proposal</span>
+   <span><span class="tag t-verify">To verify</span> Unconfirmed / to verify in first 30 days</span>
+  </div>
+  <div class="grid srcs r" style="--d:3" id="srcList"></div>
+  <p class="disc r" style="--d:4">Disclaimer: independent interview preparation, not affiliated with or endorsed by BIO-key; partner names show public announcements or existing relationships, not agreements.</p>
+ </div>
+</section>
+</main>
+
+<script>
+(function(){
+"use strict";
+var NS="http://www.w3.org/2000/svg";
+var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function h(t,a){var e=document.createElement(t);a=a||{};Object.keys(a).forEach(function(k){var v=a[k];if(v==null)return;if(k==="class")e.className=v;else if(k==="text")e.textContent=v;else if(k==="style")e.style.cssText=v;else if(k.slice(0,2)==="on")e.addEventListener(k.slice(2),v);else e.setAttribute(k,v)});for(var i=2;i<arguments.length;i++)ap(e,arguments[i]);return e}
+function S(t,a){var e=document.createElementNS(NS,t);a=a||{};Object.keys(a).forEach(function(k){var v=a[k];if(v==null)return;if(k==="text")e.textContent=v;else if(k.slice(0,2)==="on")e.addEventListener(k.slice(2),v);else e.setAttribute(k,v)});for(var i=2;i<arguments.length;i++)ap(e,arguments[i]);return e}
+function ap(e,c){if(c==null||c===false)return;if(Array.isArray(c)){c.forEach(function(x){ap(e,x)});return}e.appendChild(c.nodeType?c:document.createTextNode(String(c)))}
+function $(id){return document.getElementById(id)}
+var TAGL={source:"Source",claim:"Company claim",inference:"My reading",verify:"To verify",cv:"Per CV"};
+function tag(t,src){return h("span",{class:"tag t-"+t,text:TAGL[t]+(src?" · "+src:"")})}
+function activate(el,fn){el.addEventListener("click",fn);el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();fn()}})}
+
+var secs=Array.prototype.slice.call(document.querySelectorAll("main>section")),cur=0,railB=[],pdotB=[];
+
+/* ---------- 01 LENS SELECTOR ---------- */
+var LENSES=[
+ {id:"commercial",name:"Commercial",desc:"Cares about partner leverage, 60-day velocity, sector playbooks, deal qualification, and 90-day pipeline conversion.",secs:[2,3,4,7,8,9,10]},
+ {id:"technical",name:"Technical",desc:"Cares about adaptive MFA (PortalGuard), FIDO-certified Passkey:YOU, on-premise/hybrid deployment, shared workstations, and PAM integration.",secs:[1,4,5,7,8]},
+ {id:"regulatory",name:"Regulatory & Privacy",desc:"Cares about NCA ECC-2:2024 (2-2-3-2), CSCC (2-2-1-1/3/4), SDAIA PDPL biometric consent & impact assessments, SAMA CSF, and Etimad rules.",secs:[1,4,6,8,12]},
+ {id:"leadership",name:"Leadership",desc:"Cares about Gulf momentum, channel governance, 90-day milestones, track record, honest gap closure, and territory/quota alignment.",secs:[2,3,7,9,10,11]}
+];
+var lensBtns=[];
+function setLens(id){
+ var L=LENSES.filter(function(x){return x.id===id})[0]||LENSES[0];
+ lensBtns.forEach(function(b){b.setAttribute("aria-pressed",b._id===L.id?"true":"false")});
+ secs.forEach(function(s,idx){
+  var hit=L.secs.indexOf(idx)!==-1;
+  s.classList.toggle("lens-hit",hit);
+  if(railB[idx])railB[idx].classList.toggle("lens-match",hit);
+ });
+ $("lensStrip").replaceChildren(
+  h("div",{class:"swap"},h("b",{style:"color:var(--acc);margin-right:6px",text:L.name+" lens:"}),h("span",{text:L.desc})),
+  h("div",{class:"lens-jumps"},L.secs.map(function(si){
+   return h("button",{type:"button",onclick:function(){go(si)},text:String(si+1).padStart(2,"0")+" "+secs[si].dataset.name});
+  }))
+ );
+}
+LENSES.forEach(function(l){
+ var b=h("button",{type:"button","aria-pressed":"false",text:l.name});
+ b._id=l.id;
+ activate(b,function(){setLens(l.id)});
+ lensBtns.push(b);
+ $("lensBtns").appendChild(b);
+});
+
+/* ---------- 02 WHY NOW: REQUIREMENT-TO-CAPABILITY FLOW ---------- */
+(function(){
+ var REQS=[
+  {id:"ecc",label:"NCA ECC-2:2024",sub:"Control 2-2-3-2",tag:"source",s:"S1",caps:[0,1,2],exp:"ECC-2:2024, 2-2-3-2: MFA for remote access and privileged accounts, with factors chosen by an impact assessment of authentication failure and bypass; the 2018 version covered remote access only."},
+  {id:"cscc",label:"NCA Critical Systems",sub:"2-2-1-1 · 2-2-1-3 · 2-2-1-4",tag:"source",s:"S2",caps:[0,1,2,3],exp:"Critical Systems Controls: 2-2-1-1 no remote access from outside the Kingdom; 2-2-1-3 MFA for all users; 2-2-1-4 MFA for privileged users and systems managing critical systems."},
+  {id:"pdpl",label:"SDAIA PDPL",sub:"In force with active enforcement",tag:"source",s:"S3 · dates To verify",caps:[1,2,3],exp:"PDPL (SDAIA): biometric data is sensitive personal data; explicit consent or a narrow legal basis plus an impact assessment. In force with active enforcement (dates To verify)."},
+  {id:"sama",label:"SAMA CSF",sub:"Financial sector IAM",tag:"verify",s:"S4",caps:[0,1,2],exp:"SAMA Cybersecurity Framework: financial institutions expected to apply MFA for remote and privileged access."}
+ ];
+ var CAPS=[
+  {label:"Adaptive MFA",sub:"PortalGuard"},
+  {label:"Phishing-resistant passwordless",sub:"Passkey:YOU"},
+  {label:"On-premise or hybrid deployment",sub:"Customer-controlled"},
+  {label:"Biometrics on shared workstations",sub:"Identity-Bound Biometrics"}
+ ];
+ var W=680,H=276,lx=14,lw=218,rx=448,rw=218;
+ var svg=S("svg",{viewBox:"0 0 "+W+" "+H,role:"img"});
+ svg.appendChild(S("title",{text:"Animated requirement-to-capability flow mapping Saudi regulations to BIO-key capabilities"}));
+ var curveG=S("g"),nodeG=S("g");
+ svg.appendChild(curveG);svg.appendChild(nodeG);
+ var curves=[],rNodes=[];
+
+ REQS.forEach(function(r,ri){
+  var ry=18+ri*64+24;
+  r.caps.forEach(function(ci,k){
+   var cy=18+ci*64+24;
+   var p=S("path",{class:"flow-curve drw",pathLength:"100",style:"--d:"+(ri*2+k),d:"M"+(lx+lw)+","+ry+" C"+(lx+lw+110)+","+ry+" "+(rx-110)+","+cy+" "+rx+","+cy});
+   curveG.appendChild(p);
+   curves.push({ri:ri,ci:ci,el:p});
+  });
+ });
+
+ REQS.forEach(function(r,ri){
+  var y=18+ri*64;
+  var g=S("g",{class:"req-node pop",style:"--d:"+(ri+1),tabindex:"0",role:"button","aria-label":r.label+" "+r.sub});
+  g.appendChild(S("rect",{x:lx,y:y,width:lw,height:48,rx:9,fill:"var(--paper)",stroke:"var(--rule)","stroke-width":1.5}));
+  g.appendChild(S("text",{x:lx+12,y:y+20,"font-size":"13.5","font-weight":"600",text:r.label}));
+  g.appendChild(S("text",{class:"m",x:lx+12,y:y+37,"font-size":"11.5",text:r.sub}));
+  function pick(){
+   rNodes.forEach(function(n,idx){n.classList.toggle("active",idx===ri)});
+   curves.forEach(function(c){
+    var match=c.ri===ri;
+    c.el.classList.toggle("hi",match);
+    c.el.classList.toggle("dim",!match);
+   });
+   var tg=r.id==="pdpl"?h("span",{},tag("source","S3")," ",tag("verify","dates")):tag(r.tag,r.s);
+   $("reqExplain").replaceChildren(
+    h("div",{class:"swap"},
+     h("div",{style:"display:flex;justify-content:space-between;align-items:center;gap:8px"},
+      h("span",{class:"mono",style:"color:var(--acc);font-weight:600",text:r.label+" ("+r.sub+")"}),
+      tg
+     ),
+     h("p",{style:"font-size:.88rem;margin-top:3px",text:r.exp})
+    )
+   );
+  }
+  g.addEventListener("mouseenter",pick);
+  activate(g,pick);
+  rNodes.push(g);
+  nodeG.appendChild(g);
+ });
+
+ CAPS.forEach(function(c,ci){
+  var y=18+ci*64;
+  var g=S("g",{class:"pop",style:"--d:"+(ci+3)});
+  g.appendChild(S("rect",{x:rx,y:y,width:rw,height:48,rx:9,fill:"var(--acc-soft)",stroke:"var(--acc)","stroke-width":1.4}));
+  g.appendChild(S("text",{x:rx+12,y:y+20,"font-size":"13.5","font-weight":"600",text:c.label}));
+  g.appendChild(S("text",{class:"m",x:rx+12,y:y+37,"font-size":"11.5",style:"fill:var(--acc)",text:c.sub}));
+  nodeG.appendChild(g);
+ });
+
+ $("reqFlowWrap").appendChild(svg);
+ rNodes[0].dispatchEvent(new Event("mouseenter"));
+
+ /* Heat grid */
+ var cols=["ECC-2:2024","CSCC","PDPL","SAMA CSF"];
+ var rows=[
+  ["Government & CNI","f","f","f","o"],
+  ["Banking","h","h","f","f"],
+  ["Healthcare","f","h","f","o"],
+  ["Telecom & energy","f","f","h","o"],
+  ["Education","h","o","f","o"]
+ ];
+ var tbl=h("table",{},
+  h("thead",{},h("tr",{},h("th",{text:"Sector"}),cols.map(function(c){return h("th",{text:c})}))),
+  h("tbody",{},rows.map(function(r,i){
+   return h("tr",{},
+    h("td",{text:r[0]}),
+    r.slice(1).map(function(v,j){
+     return h("td",{},h("span",{class:"dot pop "+v,style:"--d:"+(i*3+j),title:{f:"Primary driver",h:"Partial / contextual",o:"Not primary"}[v]}));
+    })
+   );
+  }))
+ );
+ $("heatGrid").appendChild(tbl);
+})();
+
+/* ---------- 03 GULF MOMENTUM ---------- */
+(function(){
+ var EV=[
+  {d:"19 May 2025",n:"Cloud Distribution Co.",s:"Saudi VAD (Ideal Group)",g:"ksa",src:"S5",full:"19 May 2025: Cloud Distribution Co. (Ideal Group) appointed Saudi VAD; committed a dedicated Riyadh BDM, pre-sales engineer and project manager; joined the Channel Alliance Partner program."},
+  {d:"Nov 2025",n:"ME defence deployment",s:"via Cloud Distribution",g:"und",src:"S6",full:"Nov 2025: Middle East defence-sector deployment through Cloud Distribution (country undisclosed). Context: a Defense and Intelligence Cybersecurity Initiative produced over USD 2M of military and defence sales in the 12 months to March 2026."},
+  {d:"28 Jul 2026",n:"Central Bank of Jordan",s:"National biometric initiative",g:"reg",src:"S7",full:"28 Jul 2026: Central Bank of Jordan selects BIO-key for a national biometric authentication initiative."},
+  {d:"6 Aug 2026",n:"Maktabi Tech",s:"Saudi education identity",g:"ksa",src:"S8",full:"6 Aug 2026: Maktabi Tech partnership for Saudi education-sector identity security."},
+  {d:"23 Sep 2026",n:"Passkey:YOU",s:"FIDO Alliance certified",g:"reg",src:"S9",full:"23 Sep 2026: Passkey:YOU receives FIDO Alliance full certification."},
+  {d:"29 Sep 2026",n:"Al Majlis Group",s:"UAE & Saudi advisory",g:"ksa",src:"S10",full:"29 Sep 2026: Al Majlis Group (a Dubai strategic advisory and government-relations firm, NOT a reseller) partnership for UAE and Saudi; first phase is a joint approach to a select group of priority organizations."},
+  {d:"13 Oct 2026",n:"ME gov. security agency",s:"<2 mo cycle · IT Harmony",g:"und",src:"S11",full:"13 Oct 2026: a Middle East government security agency selects MFA and SSO for core communications access, from first discussion to agreement in under two months, delivered with IT Harmony. A new President of PortalGuard was also appointed the same day."},
+  {d:"22 Oct 2026",n:"Gulf national-gov. inst.",s:"7th Gulf customer in 6 mo · VaporVM",g:"und",src:"S12",full:"22 Oct 2026: a Gulf national-government institution replaces legacy authentication with passwordless biometrics (PortalGuard, Passkey:YOU, WEB-key, EcoID III) with VaporVM; the release calls it the 7th new Gulf customer in six months."}
+ ];
+ var W=1060,H=238,cy=118,x0=82,step=(W-2*x0)/(EV.length-1);
+ function X(i){return x0+i*step}
+ var COL={ksa:"var(--acc)",reg:"var(--blue)",und:"var(--hot)"};
+ var svg=S("svg",{viewBox:"0 0 "+W+" "+H,role:"img"});
+ svg.appendChild(S("title",{text:"Timeline of 8 BIO-key regional events from May 2025 to October 2026, highlighting 5 of 8 in Jul to Oct 2026"}));
+
+ var bx0=X(2)-44,bx1=X(7)+44;
+ svg.appendChild(S("rect",{class:"pop",style:"--d:2",x:bx0,y:14,width:bx1-bx0,height:H-28,rx:14,fill:"var(--acc-soft)",opacity:".65"}));
+ svg.appendChild(S("line",{class:"drw",pathLength:"100",x1:36,x2:W-36,y1:cy,y2:cy,stroke:"var(--ink)","stroke-width":1.6}));
+
+ var evNodes=[];
+ EV.forEach(function(e,i){
+  var x=X(i),up=i%2===0;
+  var g=S("g",{class:"ev pop",style:"--d:"+(i*2+2),tabindex:"0",role:"button","aria-label":e.d+" "+e.n});
+  g.appendChild(S("line",{x1:x,x2:x,y1:up?cy-46:cy+10,y2:up?cy-10:cy+46,stroke:"var(--faint)","stroke-width":1.2}));
+  g.appendChild(S("circle",{cx:x,cy:cy,r:8.5,fill:e.g==="und"?"var(--card)":COL[e.g],stroke:COL[e.g],"stroke-width":e.g==="und"?2.8:0}));
+  var ty=up?cy-84:cy+62;
+  g.appendChild(S("text",{class:"m",x:x,y:ty,"text-anchor":"middle","font-size":"11.5",text:e.d}));
+  g.appendChild(S("text",{x:x,y:ty+17,"text-anchor":"middle","font-size":"13.5","font-weight":"600",text:e.n}));
+  g.appendChild(S("text",{x:x,y:ty+32,"text-anchor":"middle","font-size":"11.5",style:"fill:var(--mut)",text:e.s}));
+  function sel(){
+   evNodes.forEach(function(n,idx){n.classList.toggle("active",idx===i)});
+   $("evDetail").replaceChildren(
+    h("div",{class:"swap",style:"flex:1"},h("b",{style:"color:var(--acc);margin-right:8px",text:e.d+":"}),h("span",{text:e.full.replace(/^[^:]+:\s*/,"")})),
+    tag("source",e.src)
+   );
+  }
+  activate(g,sel);
+  g.addEventListener("mouseenter",sel);
+  evNodes.push(g);
+  svg.appendChild(g);
+ });
+
+ var badge=S("text",{x:(bx0+bx1)/2,y:H-4,"text-anchor":"middle","font-size":"13.5","font-weight":"700",style:"fill:var(--acc)"});
+ badge.appendChild(S("tspan",{"data-count":"5","data-suffix":" of 8 in Jul – Oct 2026",text:"5 of 8 in Jul – Oct 2026"}));
+ svg.appendChild(badge);
+
+ $("momTimeline").appendChild(svg);
+ evNodes[7].dispatchEvent(new Event("mouseenter"));
+
+ /* Half-year bar chart: H1 2025: 2, H2 2025: 2, H1 2026: 0, H2 2026 to 22 Oct: 5 */
+ var P=[["H1 '25",2],["H2 '25",2],["H1 '26",0],["H2 '26*",5]];
+ var ps=S("svg",{viewBox:"0 0 220 110",role:"img"});
+ ps.appendChild(S("title",{text:"Announcements per half-year: H1 2025: 2, H2 2025: 2, H1 2026: 0, H2 2026 to 22 Oct: 5"}));
+ P.forEach(function(p,i){
+  var bh=p[1]/5*64,x=12+i*52;
+  ps.appendChild(S("rect",{class:"gy",style:"--d:"+i,x:x,y:84-bh,width:34,height:Math.max(bh,2),rx:4,fill:i===3?"var(--acc)":"var(--rule)"}));
+  ps.appendChild(S("text",{class:"pop",style:"--d:"+(i+2),x:x+17,y:78-bh,"text-anchor":"middle","font-size":"16","font-family":"Instrument Serif,serif",text:String(p[1])}));
+  ps.appendChild(S("text",{class:"m",x:x+17,y:102,"text-anchor":"middle","font-size":"11",text:p[0]}));
+ });
+ $("paceBar").appendChild(ps);
+})();
+
+/* ---------- 04 PARTNER MODEL ---------- */
+(function(){
+ var SPOKES=[
+  {n:"Cloud Distribution",sub:"Saudi VAD · Anchor",col:"var(--acc)",r:26,tag:"source",s:"S5",role:"Saudi VAD (Ideal Group) appointed 19 May 2025; dedicated Riyadh BDM, pre-sales engineer & project manager; Channel Alliance Partner.",plan:"Anchor distributor. Agree account ownership, deal registration rules, and fortnightly joint pipeline review in month one; run joint calls with their Riyadh pre-sales."},
+  {n:"IT Harmony",sub:"Gulf VAD · Government",col:"var(--blue)",r:18,tag:"source",s:"S11",role:"Delivered the 13 Oct 2026 Middle East government security agency MFA & SSO win in under two months.",plan:"Map active government relationships and align rules of engagement alongside Cloud Distribution so public-sector deals have clear registration."},
+  {n:"VaporVM",sub:"Integration & delivery",col:"var(--blue)",r:18,tag:"source",s:"S12",role:"Delivered the 22 Oct 2026 Gulf national-government passwordless biometrics deployment (PortalGuard, Passkey:YOU, WEB-key, EcoID III).",plan:"Engage as specialist integration and delivery partner for complex on-premise and biometric rollouts."},
+  {n:"Maktabi Tech",sub:"Saudi education",col:"var(--acc)",r:18,tag:"source",s:"S8",role:"Partnered 6 Aug 2026 for Saudi education-sector identity security.",plan:"Build a joint target list of universities and education institutions needing SSO, self-service password reset, and PDPL alignment."},
+  {n:"Al Majlis Group",sub:"Advisory & introductions",col:"var(--amber)",r:18,tag:"source",s:"S10",role:"Dubai strategic advisory and government-relations firm (NOT a reseller) partnered 29 Sep 2026 for UAE & Saudi priority organizations.",plan:"Pair executive introductions from Al Majlis with immediate partner deal registration and local technical delivery through Cloud Distribution or an approved SI."},
+  {n:"My 50+ integrators",sub:"Specification influence",col:"var(--hot)",r:20,tag:"cv",s:"",role:"Working relationships across Saudi enterprise ICT and ELV/security integrators.",plan:"Shortlist high-fit SIs & MSSPs in days 31–60, enable them with an Arabic/English ECC 2-2-3 one-pager, and register deals through Cloud Distribution."}
+ ];
+ /* Adjusted viewBox and geometry to ensure no labels ever clip at top or bottom */
+ var W=640,H=390,cx=320,cy=195,rad=118;
+ var svg=S("svg",{viewBox:"0 0 "+W+" "+H,role:"img"});
+ svg.appendChild(S("title",{text:"Hub-and-spoke partner model centred on one account owner per opportunity"}));
+ var lineG=S("g"),nodeG=S("g");
+ svg.appendChild(lineG);svg.appendChild(nodeG);
+
+ var sNodes=[];
+ SPOKES.forEach(function(sp,i){
+  var a=(i/SPOKES.length)*Math.PI*2-Math.PI/2;
+  var x=cx+Math.cos(a)*rad,y=cy+Math.sin(a)*rad;
+  lineG.appendChild(S("line",{class:"drw",pathLength:"100",style:"--d:"+(i*2+1),x1:cx,y1:cy,x2:x,y2:y,stroke:i===0?"var(--acc)":"var(--rule)","stroke-width":i===0?3:1.8}));
+  var g=S("g",{class:"spoke-node pop",style:"--d:"+(i*2+2),tabindex:"0",role:"button","aria-label":sp.n+" "+sp.sub});
+  g.appendChild(S("circle",{cx:x,cy:y,r:sp.r,fill:sp.col}));
+  
+  var isTop = i === 0;
+  var isBottom = i === 3;
+  var right = Math.cos(a) > 0.15;
+  var left = Math.cos(a) < -0.15;
+  
+  var tx, ty, anc;
+  if(isTop){
+   tx = x;
+   anc = "middle";
+   ty = y - sp.r - 20; /* comfortable headroom inside top of viewBox */
+  } else if(isBottom){
+   tx = x;
+   anc = "middle";
+   ty = y + sp.r + 17; /* comfortable spacing inside bottom of viewBox */
+  } else if(right){
+   tx = x + sp.r + 12;
+   anc = "start";
+   ty = y - 3;
+  } else {
+   tx = x - sp.r - 12;
+   anc = "end";
+   ty = y - 3;
+  }
+
+  g.appendChild(S("text",{x:tx,y:ty,"text-anchor":anc,"font-size":"13.5","font-weight":"700",text:sp.n}));
+  g.appendChild(S("text",{class:"m",x:tx,y:ty+15,"text-anchor":anc,"font-size":"11.5",text:sp.sub}));
+  
+  function sel(){
+   sNodes.forEach(function(n,idx){n.classList.toggle("active",idx===i)});
+   $("spokeCard").replaceChildren(
+    h("div",{class:"swap"},
+     h("div",{style:"display:flex;justify-content:space-between;align-items:center;gap:8px"},
+      h("span",{class:"mono",style:"color:var(--acc)",text:sp.sub}),
+      tag(sp.tag,sp.s)
+     ),
+     h("h3",{style:"font-family:var(--serif);font-size:1.65rem;font-weight:400;margin-top:4px",text:sp.n}),
+     h("div",{class:"mono",style:"margin-top:8px",text:"Role"}),
+     h("p",{style:"font-size:.88rem;margin-top:2px",text:sp.role}),
+     h("div",{class:"mono",style:"margin-top:8px",text:"What I would do with them"}),
+     h("p",{style:"font-size:.88rem;margin-top:2px",text:sp.plan})
+    )
+   );
+  }
+  activate(g,sel);
+  sNodes.push(g);
+  nodeG.appendChild(g);
+ });
+
+ var centerG=S("g",{class:"pop",style:"--d:0"});
+ centerG.appendChild(S("circle",{cx:cx,cy:cy,r:42,fill:"var(--ink)"}));
+ centerG.appendChild(S("text",{x:cx,y:cy-4,"text-anchor":"middle","font-size":"16","font-family":"Instrument Serif,serif",style:"fill:var(--paper)",text:"Me"}));
+ centerG.appendChild(S("text",{x:cx,y:cy+12,"text-anchor":"middle","font-size":"10.5",style:"fill:var(--acc-soft)",text:"1 owner / deal"}));
+ svg.appendChild(centerG);
+ $("hubSvgWrap").appendChild(svg);
+ sNodes[0].dispatchEvent(new Event("click"));
+
+ /* Lead flow progression path with wide spacing to prevent text collision */
+ var lfW=520,lfH=72;
+ var lf=S("svg",{viewBox:"0 0 "+lfW+" "+lfH,role:"img"});
+ lf.appendChild(S("title",{text:"Lead progression path: Al Majlis introduction, partner registration, pre-sales, proof of concept"}));
+ var pathStr="M55,24 L180,24 L315,24 L450,24";
+ lf.appendChild(S("path",{d:pathStr,stroke:"var(--rule)","stroke-width":2.5,fill:"none"}));
+ lf.appendChild(S("path",{class:"drw",pathLength:"100",d:pathStr,stroke:"var(--acc)","stroke-width":2.5,fill:"none"}));
+ [
+  ["1. Al Majlis intro",55],
+  ["2. Partner reg.",180],
+  ["3. Pre-sales",315],
+  ["4. Proof of concept",450]
+ ].forEach(function(st){
+  lf.appendChild(S("circle",{cx:st[1],cy:24,r:6,fill:"var(--card)",stroke:"var(--acc)","stroke-width":2}));
+  lf.appendChild(S("text",{class:"m",x:st[1],y:52,"text-anchor":"middle","font-size":"11",text:st[0]}));
+ });
+ lf.appendChild(S("circle",{class:"travel-dot",r:5.5,fill:"var(--hot)",style:"offset-path:path('"+pathStr+"')"}));
+ $("leadFlowSvg").appendChild(lf);
+
+ /* Optional second layer: My network today constellation */
+ var NET={
+  si:["stc solutions","3S","Futuretech ICT","Abana","Seder Group","KAES","Secutronic","Black Arrow","Awajem"],
+  vad:["Anixter","Aligntech"],
+  oem:["Western Digital","Seagate","Toshiba","Axis","Bosch","Milestone","Digifort","Genetec","Hanwha Vision","Allied Telesis"]
+ };
+ var nSvg=S("svg",{viewBox:"0 0 640 390",role:"img"});
+ nSvg.appendChild(S("title",{text:"Constellation of existing Saudi relationships: 9 named integrators, 2 distributors, 10 OEM alliances"}));
+ var nCx=320,nCy=195;
+ [65,112,156].forEach(function(r){nSvg.appendChild(S("circle",{cx:nCx,cy:nCy,r:r,fill:"none",stroke:"var(--rule)","stroke-dasharray":"2 4"}))});
+ var rings=[["vad",65,"var(--hot)"],["si",112,"var(--acc)"],["oem",156,"var(--blue)"]];
+ rings.forEach(function(rg){
+  var arr=NET[rg[0]],rad2=rg[1],col=rg[2];
+  arr.forEach(function(name,idx){
+   var a=(idx/arr.length)*Math.PI*2-Math.PI/2+(rg[0]==="si"?0.2:0);
+   var x=nCx+Math.cos(a)*rad2,y=nCy+Math.sin(a)*rad2;
+   nSvg.appendChild(S("line",{x1:nCx,y1:nCy,x2:x,y2:y,stroke:"var(--rule)","stroke-width":0.8}));
+   nSvg.appendChild(S("circle",{cx:x,cy:y,r:5.5,fill:col}));
+   var right=Math.cos(a)>=0;
+   nSvg.appendChild(S("text",{x:x+(right?8:-8),y:y+4,"text-anchor":right?"start":"end","font-size":"11.5",text:name}));
+  });
+ });
+ nSvg.appendChild(S("circle",{cx:nCx,cy:nCy,r:24,fill:"var(--ink)"}));
+ nSvg.appendChild(S("text",{x:nCx,y:nCy+4,"text-anchor":"middle","font-size":"13","font-family":"Instrument Serif,serif",style:"fill:var(--paper)",text:"Today"}));
+ $("netSvgWrap").appendChild(nSvg);
+
+ activate($("btnHubView"),function(){
+  $("btnHubView").setAttribute("aria-pressed","true");
+  $("btnNetView").setAttribute("aria-pressed","false");
+  $("hubSvgWrap").style.display="";
+  $("netSvgWrap").style.display="none";
+  $("partViewTag").textContent="Proposed engagement model (mine)";
+  $("partViewTag").className="tag t-inference";
+ });
+ activate($("btnNetView"),function(){
+  $("btnNetView").setAttribute("aria-pressed","true");
+  $("btnHubView").setAttribute("aria-pressed","false");
+  $("hubSvgWrap").style.display="none";
+  $("netSvgWrap").style.display="";
+  $("partViewTag").textContent="Working relationships today, not commitments to BIO-key";
+  $("partViewTag").className="tag t-cv";
+ });
+})();
+
+/* ---------- 05 SECTOR PLAYBOOKS ---------- */
+(function(){
+ var DQS=[
+  "Which systems are classed as critical, and who has remote or privileged access?",
+  "Are users on shared workstations or in phone-restricted areas?",
+  "Where must biometric templates live, and who approved consent under PDPL?",
+  "What is the incumbent, and when is its contract up?"
+ ];
+ DQS.forEach(function(q){$("dqAll").appendChild(h("li",{text:q}))});
+
+ var SECS=[
+  {n:"Government & defence-adjacent",short:"Gov & defence",trig:"ECC 2-2-3-2 and critical-systems MFA",angle:"On-premise or hybrid, phishing-resistant biometrics",part:"IT Harmony, Cloud Distribution, VaporVM",dqs:[0,1,2]},
+  {n:"Banking & fintech",short:"Banking & fintech",trig:"SAMA framework and PDPL",angle:"Passwordless and consent-aware biometrics",part:"Cloud Distribution and integrators",dqs:[0,2,3]},
+  {n:"Healthcare",short:"Healthcare",trig:"ECC and shared workstations",angle:"Fast fingerprint or badge sign-in",part:"Cloud Distribution",dqs:[1,2,3]},
+  {n:"Telecom & energy",short:"Telecom & energy",trig:"ECC and critical systems",angle:"MFA for remote and privileged access",part:"Integrators",dqs:[0,1,3]},
+  {n:"Education",short:"Education",trig:"PDPL and large user bases",angle:"SSO and self-service password reset",part:"Maktabi Tech",dqs:[2,3,0]}
+ ];
+ var tBtns=[];
+ function showSec(i){
+  var s=SECS[i];
+  tBtns.forEach(function(b,idx){b.setAttribute("aria-pressed",idx===i?"true":"false")});
+  $("secStage").replaceChildren(
+   h("div",{class:"swap"},
+    h("div",{style:"display:flex;justify-content:space-between;align-items:center;gap:8px"},
+     h("span",{class:"mono",text:"Sector playbook 0"+(i+1)}),
+     tag("inference","Proposal (mine)")
+    ),
+    h("h3",{style:"font-family:var(--serif);font-size:1.85rem;font-weight:400;margin-top:4px",text:s.n}),
+    h("div",{class:"kv-grid"},
+     h("div",{class:"kv-box"},h("span",{class:"mono",text:"Regulatory trigger"}),h("div",{style:"font-weight:600;font-size:.92rem",text:s.trig})),
+     h("div",{class:"kv-box"},h("span",{class:"mono",text:"BIO-key angle"}),h("div",{style:"font-weight:600;font-size:.92rem",text:s.angle})),
+     h("div",{class:"kv-box"},h("span",{class:"mono",text:"Likely partner"}),h("div",{style:"font-weight:600;font-size:.92rem",text:s.part}))
+    ),
+    h("div",{class:"mono",style:"margin-top:12px",text:"Priority discovery questions for this sector"}),
+    h("ul",{class:"dq-list"},s.dqs.map(function(qi){return h("li",{text:DQS[qi]})}))
+   )
+  );
+ }
+ SECS.forEach(function(s,i){
+  var b=h("button",{type:"button",class:"sec-tab","aria-pressed":"false"},
+   h("span",{class:"mono",text:"0"+(i+1)}),
+   h("span",{style:"font-weight:600;font-size:.95rem",text:s.short}),
+   h("span",{style:"font-size:.78rem;opacity:.82",text:s.part})
+  );
+  activate(b,function(){showSec(i)});
+  tBtns.push(b);
+  $("secTabs").appendChild(b);
+ });
+ showSec(0);
+})();
+
+/* ---------- 06 COMPETITIVE POSITION ---------- */
+(function(){
+ var P=[
+  ["Microsoft Entra",.16,.32],
+  ["Okta",.10,.20],
+  ["Cisco Duo",.24,.12],
+  ["CyberArk",.62,.26],
+  ["Ping/Thales",.44,.48],
+  ["RSA",.68,.14],
+  ["HID",.52,.68],
+  ["BIO-key",.85,.86,1]
+ ];
+ var W=580,H=350,L=52,B=44;
+ function X(v){return L+v*(W-L-28)}
+ function Y(v){return H-B-v*(H-B-24)}
+ var svg=S("svg",{viewBox:"0 0 "+W+" "+H,role:"img"});
+ svg.appendChild(S("title",{text:"2-axis competitive positioning map: cloud-first to on-premise/air-gapped vs phone/token to biometric-native"}));
+ svg.appendChild(S("rect",{class:"pop",x:X(.58),y:Y(1),width:X(1)-X(.58),height:Y(.54)-Y(1),rx:12,fill:"var(--acc-soft)"}));
+ svg.appendChild(S("text",{class:"m",x:X(.61),y:Y(.95)+6,style:"fill:var(--acc);font-weight:600",text:"where it should win"}));
+ svg.appendChild(S("line",{class:"drw",pathLength:"100",x1:L,y1:H-B,x2:W-20,y2:H-B,stroke:"var(--ink)","stroke-width":1.5}));
+ svg.appendChild(S("line",{class:"drw",pathLength:"100",x1:L,y1:H-B,x2:L,y2:20,stroke:"var(--ink)","stroke-width":1.5}));
+ svg.appendChild(S("text",{class:"m",x:(W+L)/2,y:H-12,"text-anchor":"middle",text:"cloud-first  →  on-premise or air-gapped"}));
+ svg.appendChild(S("text",{class:"m",x:16,y:(H-B)/2,"text-anchor":"middle",transform:"rotate(-90 16 "+(H-B)/2+")",text:"phone or token  →  biometric-native"}));
+ P.forEach(function(p,i){
+  var x=X(p[1]),y=Y(p[2]),me=p[3],rt=p[1]>.72;
+  svg.appendChild(S("g",{class:"cp pop",style:"--d:"+(i+2)},
+   S("circle",{cx:x,cy:y,r:me?11:6.5,fill:me?"var(--acc)":"var(--ink)",opacity:me?1:.78}),
+   S("text",{x:rt?x-15:x+11,y:y+4.5,"text-anchor":rt?"end":"start","font-size":me?"16":"13.5","font-weight":me?"700":"500",text:p[0]})
+  ));
+ });
+ $("cmpMap").appendChild(svg);
+
+ /* PeerSpot Apr 2026 mindshare bars */
+ var ms=S("svg",{viewBox:"0 0 420 68",role:"img"});
+ ms.appendChild(S("title",{text:"PeerSpot April 2026 mindshare: Microsoft Entra 16.8%, Okta 8.9%"}));
+ [["Microsoft Entra",16.8,"var(--ink)"],["Okta",8.9,"var(--blue)"]].forEach(function(m,i){
+  var y=6+i*32,w=(m[1]/20)*240;
+  ms.appendChild(S("text",{x:0,y:y+15,"font-size":"13","font-weight":"600",text:m[0]}));
+  ms.appendChild(S("rect",{class:"gx",style:"--d:"+(i+2),x:115,y:y+2,width:w,height:18,rx:5,fill:m[2]}));
+  ms.appendChild(S("text",{class:"m",x:123+w,y:y+15,"font-size":"12.5",text:m[1]+"%"}));
+ });
+ $("mindshareBars").appendChild(ms);
+})();
+
+/* ---------- 07 SAUDI PROCUREMENT PATH (CLEAN WRAP, NO OVERLAPPING TEXT) ---------- */
+(function(){
+ var STEPS=[
+  {num:"01",name:"Specification",line1:"Consultant / client spec",line2:"Shape criteria early",full:"01. Consultant or end-user specification: influence technical & compliance criteria early."},
+  {num:"02",name:"Registration",line1:"Partner registers deal",line2:"Lock before pre-sales",full:"02. Partner registers the opportunity: deal registration before technical pre-sales effort."},
+  {num:"03",name:"Etimad Route",line1:"Local entity on Etimad",line2:"Saudi partner or RHQ",full:"03. Local entity on Etimad: registered Saudi partner or regional HQ exemption route."},
+  {num:"04",name:"Tender & Bid",line1:"Formal bid submission",line2:"Compliant submission",full:"04. Bid: compliant technical & commercial submission under procurement rules."},
+  {num:"05",name:"Contract Award",line1:"Award under GTPL",line2:"Local content rules",full:"05. Award: contract issued under GTPL & local-content rules."},
+  {num:"06",name:"Local Delivery",line1:"Rollout with partner",line2:"On-premise / hybrid",full:"06. Local delivery: on-premise or hybrid rollout with certified local partner."}
+ ];
+ var W=1080,H=150,y=44,x0=85,step=(W-2*x0)/(STEPS.length-1);
+ function X(i){return x0+i*step}
+ var svg=S("svg",{viewBox:"0 0 "+W+" "+H,role:"img"});
+ svg.appendChild(S("title",{text:"Saudi procurement path from consultant specification to local delivery"}));
+ var pStr="M"+X(0)+","+y+" L"+X(5)+","+y;
+ svg.appendChild(S("path",{d:pStr,stroke:"var(--rule)","stroke-width":3,fill:"none"}));
+ svg.appendChild(S("path",{class:"drw",pathLength:"100",d:pStr,stroke:"var(--acc)","stroke-width":3,fill:"none"}));
+
+ function setProcDetail(st){
+  $("procDetail").replaceChildren(
+   h("div",{class:"swap"},
+    h("b",{style:"color:var(--acc);margin-right:6px",text:"Stage "+st.num+" · "+st.name+":"}),
+    h("span",{text:st.full.replace(/^\d+\.\s*/,"")})
+   )
+  );
+ }
+
+ STEPS.forEach(function(st,i){
+  var x=X(i);
+  var g=S("g",{class:"proc-step-node pop",style:"--d:"+(i*2+1),tabindex:"0",role:"button","aria-label":"Step "+st.num+": "+st.name});
+  g.appendChild(S("circle",{cx:x,cy:y,r:16,fill:i===0||i===1?"var(--acc)":"var(--card)",stroke:"var(--acc)","stroke-width":2}));
+  g.appendChild(S("text",{x:x,y:y+4.5,"text-anchor":"middle","font-size":"12","font-family":"JetBrains Mono,monospace","font-weight":"600",style:"fill:"+(i===0||i===1?"var(--paper)":"var(--ink)"),text:st.num}));
+  
+  /* Formatted in clean multi-line hierarchy to guarantee zero text collision */
+  g.appendChild(S("text",{x:x,y:y+38,"text-anchor":"middle","font-size":"13","font-weight":"700",text:st.name}));
+  g.appendChild(S("text",{x:x,y:y+54,"text-anchor":"middle","font-size":"11.5",style:"fill:var(--ink)",text:st.line1}));
+  g.appendChild(S("text",{class:"m",x:x,y:y+69,"text-anchor":"middle","font-size":"10.5",text:st.line2}));
+  
+  activate(g,function(){setProcDetail(st)});
+  g.addEventListener("mouseenter",function(){setProcDetail(st)});
+  svg.appendChild(g);
+ });
+ svg.appendChild(S("circle",{class:"travel-dot",r:7,fill:"var(--hot)",style:"offset-path:path('"+pStr+"')"}));
+ $("procSvg").appendChild(svg);
+ setProcDetail(STEPS[0]);
+})();
+
+/* ---------- 08 OPPORTUNITY SCORECARD ---------- */
+(function(){
+ var ITEMS=[
+  "Compliance trigger identified",
+  "Economic buyer identified",
+  "Budget and deadline known",
+  "Deployment model fits (cloud, on-premise, hybrid)",
+  "Incumbent known",
+  "Delivery partner aligned"
+ ];
+ var state=[true,true,false,true,true,true];
+ var btns=[];
+
+ var rSvg=S("svg",{viewBox:"0 0 200 200",role:"img"});
+ rSvg.appendChild(S("title",{text:"Qualification score ring from 0 to 6"}));
+ rSvg.appendChild(S("circle",{cx:100,cy:100,r:74,fill:"none",stroke:"var(--rule)","stroke-width":16}));
+ var arc=S("circle",{cx:100,cy:100,r:74,fill:"none",stroke:"var(--acc)","stroke-width":16,"stroke-linecap":"round",pathLength:"6","stroke-dasharray":"6","stroke-dashoffset":"1",transform:"rotate(-90 100 100)",style:"transition:stroke-dashoffset .5s var(--ease),stroke .35s"});
+ var numTxt=S("text",{x:100,y:112,"text-anchor":"middle","font-size":"48","font-family":"Instrument Serif,serif",text:"5 / 6"});
+ rSvg.appendChild(arc);rSvg.appendChild(numTxt);
+ $("scoreRing").appendChild(rSvg);
+
+ function syncScore(){
+  var sc=state.filter(Boolean).length;
+  btns.forEach(function(b,i){
+   b.setAttribute("aria-pressed",state[i]?"true":"false");
+   b.querySelector(".sc-box").textContent=state[i]?"✓":"";
+  });
+  arc.setAttribute("stroke-dashoffset",String(6-sc));
+  numTxt.textContent=sc+" / 6";
+  var col,verd,act;
+  if(sc>=5){
+   col="var(--acc)";verd="Pursue (5–6)";
+   act="Next action: Lock partner deal registration, assign pre-sales, and scope a written-criteria PoC.";
+  }else if(sc>=3){
+   col="var(--amber)";verd="Nurture (3–4)";
+   act="Next action: Run joint discovery with the partner to close missing criteria before committing pre-sales.";
+  }else{
+   col="var(--hot)";verd="Park (0–2)";
+   act="Next action: Share the Arabic/English ECC 2-2-3 one-pager via the partner and revisit on the next compliance cycle.";
+  }
+  arc.setAttribute("stroke",col);
+  $("scoreVerdict").style.color=col;
+  $("scoreVerdict").textContent=verd;
+  $("scoreAction").textContent=act;
+ }
+
+ ITEMS.forEach(function(txt,i){
+  var b=h("button",{type:"button",class:"sc-btn","aria-pressed":state[i]?"true":"false"},
+   h("span",{class:"sc-box",text:state[i]?"✓":""}),
+   h("span",{style:"font-weight:500;font-size:.92rem",text:txt})
+  );
+  activate(b,function(){state[i]=!state[i];syncScore()});
+  btns.push(b);
+  $("scoreToggles").appendChild(b);
+ });
+ syncScore();
+})();
+
+/* ---------- 09 SCENARIO CARDS (FLUID ANIMATION & SMOOTH EXPAND) ---------- */
+(function(){
+ var SCENS=[
+  {p:"A partner stops responding",m1:"Meet in person in Riyadh to review blocked accounts and check if the deal stalled on buyer budget or internal priority.",m2:"Re-anchor around a live ECC 2-2-3-2 or CSCC trigger account; if inactive after agreed window, reassign the target under clear rules of engagement.",sig:"Fortnightly pipeline review restored or account cleanly re-allocated."},
+  {p:"A government buyer with a 60-day window, like the 13 Oct deal",m1:"Register the opportunity immediately with an Etimad-ready partner (Cloud Distribution, IT Harmony, or VaporVM) and confirm deployment fit.",m2:"Deliver a focused 2-week PoC with written success criteria mapped directly to the agency's ECC or CSCC audit deadline.",sig:"Technical sign-off in under 30 days and commercial agreement inside the 60-day window."},
+  {p:"The incumbent is Microsoft Entra",m1:"Never attack Entra head-on; validate where Entra leaves gaps (shared workstations, phone-free areas, air-gapped or on-premise systems).",m2:"Position BIO-key Identity-Bound Biometrics and Passkey:YOU as the phishing-resistant, compliance-grade layer complementing their estate.",sig:"Scoped pilot for shared-workstation or privileged/on-premise users alongside Entra."},
+  {p:"A CISO raises PDPL concerns about biometrics",m1:"Acknowledge that biometric data is sensitive personal data under SDAIA PDPL requiring explicit consent or a narrow legal basis plus an impact assessment.",m2:"Demonstrate on-premise or customer-controlled deployment options and provide an impact-assessment checklist early in discovery.",sig:"Data-privacy sign-off and agreement on template residency before procurement."},
+  {p:"Channel conflict between two partners",m1:"Check timestamped deal registration and documented pre-sales investment; uphold the 'one account owner per opportunity' rule.",m2:"Where one partner brings advisory access (e.g., Al Majlis Group) and another brings Etimad delivery, split roles transparently before bidding.",sig:"Both partners stay engaged with written role clarity and zero margin erosion."},
+  {p:"A tender spec locks in another vendor",m1:"Engage the end-user CISO and consultant around NCA ECC-2:2024 2-2-3-2 impact-assessment criteria and shared-workstation / phone-free gaps.",m2:"Have a registered Saudi SI submit formal technical clarification questions on Etimad requesting equivalence for FIDO-certified passwordless biometrics.",sig:"Addendum opens the specification or positions BIO-key for the biometric/on-premise lot."}
+ ];
+ var cards=[];
+ SCENS.forEach(function(s,i){
+  var isInitOpen = i < 2;
+  var c=h("div",{class:"card scen-card r",style:"--d:"+(i+2),tabindex:"0",role:"button","aria-expanded":isInitOpen?"true":"false"},
+   h("div",{class:"scen-head"},
+    h("div",{},h("span",{class:"mono",text:"Scenario 0"+(i+1)}),h("h3",{style:"margin-top:3px",text:s.p})),
+    h("span",{class:"scen-toggle","aria-hidden":"true"},
+     h("span",{class:"scen-icon"})
+    )
+   ),
+   h("div",{class:"scen-drawer"},
+    h("div",{class:"scen-body"},
+     h("div",{class:"scen-inner"},
+      h("div",{class:"scen-step"},h("b",{text:"First move"}),h("span",{text:s.m1})),
+      h("div",{class:"scen-step"},h("b",{text:"Second move"}),h("span",{text:s.m2})),
+      h("div",{class:"scen-step scen-sig"},h("b",{text:"Success signal"}),h("span",{text:s.sig}))
+     )
+    )
+   )
+  );
+  function tog(){
+   var exp=c.getAttribute("aria-expanded")==="true";
+   c.setAttribute("aria-expanded",exp?"false":"true");
+  }
+  activate(c,tog);
+  cards.push(c);
+  $("scenGrid").appendChild(c);
+ });
+
+ var allOpen=false;
+ activate($("toggleAllScen"),function(){
+  allOpen=!allOpen;
+  cards.forEach(function(c){
+   c.setAttribute("aria-expanded",allOpen?"true":"false");
+  });
+  $("toggleAllScen").textContent=allOpen?"Collapse all":"Expand all 6";
+ });
+})();
+
+/* ---------- 10 FIRST 90 DAYS ---------- */
+(function(){
+ var PHASES=[
+  {n:"Learn and map",d:"Days 1–30",s:0,e:30,col:"var(--ink)",ms:"Day 30: Demo unaided",tasks:[
+   "Product enablement on PortalGuard, Passkey:YOU, IBB and EcoID III",
+   "Meet Cloud Distribution's Riyadh team; map partners, open deals and account ownership",
+   "Build a list of 30 target accounts from ECC, CSCC and SAMA triggers"
+  ]},
+  {n:"Activate",d:"Days 31–60",s:30,e:60,col:"var(--acc)",ms:"Day 60: Partner shortlist",tasks:[
+   "Joint pipeline sessions with each partner; ten qualified executive meetings",
+   "Arabic and English ECC 2-2-3 one-pager; shortlist integrators and MSSPs",
+   "Prepare demo or proof-of-concept kit"
+  ]},
+  {n:"Convert",d:"Days 61–90",s:60,e:90,col:"var(--hot)",ms:"Day 90: PoC and forecast",tasks:[
+   "Three to five opportunities with named budget owners",
+   "First proof of concept with written success criteria; one reference story",
+   "Stage-qualified forecast, weekly reporting rhythm, and year-one targets agreed with BIO-key"
+  ]}
+ ];
+ var W=980,H=138,L=40,R=940;
+ function X(d){return L+(d/90)*(R-L)}
+ var svg=S("svg",{viewBox:"0 0 "+W+" "+H,role:"img"});
+ svg.appendChild(S("title",{text:"90-day Gantt track with three phases and milestone diamonds at days 30, 60 and 90"}));
+ [0,30,60,90].forEach(function(d){
+  svg.appendChild(S("line",{x1:X(d),x2:X(d),y1:20,y2:112,stroke:"var(--rule)","stroke-dasharray":"3 3"}));
+  svg.appendChild(S("text",{class:"m",x:X(d),y:130,"text-anchor":"middle",text:"Day "+d}));
+ });
+ PHASES.forEach(function(p,i){
+  var y=28+i*26,x=X(p.s),w=X(p.e)-X(p.s);
+  svg.appendChild(S("rect",{class:"gx",style:"--d:"+(i*2+1),x:x,y:y,width:w,height:20,rx:10,fill:p.col}));
+  svg.appendChild(S("text",{x:x+12,y:y+14.5,"font-size":"12.5","font-weight":"600",style:"fill:var(--paper)",text:p.n+" ("+p.d+")"}));
+  var mx=X(p.e);
+  var mg=S("g",{class:"pop",style:"--d:"+(i*2+5)});
+  mg.appendChild(S("path",{d:"M"+mx+","+(y+2)+" l8,8 l-8,8 l-8,-8z",fill:"var(--card)",stroke:p.col,"stroke-width":2.5}));
+  mg.appendChild(S("text",{class:"m",x:mx-12,y:y-4,"text-anchor":"end",style:"fill:var(--ink);font-weight:600",text:p.ms}));
+  svg.appendChild(mg);
+ });
+ $("ganttSvg").appendChild(svg);
+
+ PHASES.forEach(function(p,i){
+  $("phaseCols").appendChild(
+   h("div",{class:"p-col"},
+    h("h3",{},h("span",{text:p.n}),h("span",{class:"mono",style:"color:var(--acc)",text:p.d})),
+    h("div",{class:"chip-list"},p.tasks.map(function(t,ti){
+     return h("div",{class:"t-chip r",style:"--d:"+(i*2+ti+2),text:t});
+    }))
+   )
+  );
+ });
+})();
+
+/* ---------- 11 TRACK RECORD AND HONEST GAP ---------- */
+(function(){
+ /* Pipeline bar chart ($15M to $35M, +133%) */
+ var pSvg=S("svg",{viewBox:"0 0 280 128",role:"img"});
+ pSvg.appendChild(S("title",{text:"Identified pipeline grew from $15M to $35M (+133%)"}));
+ [[15,"Start",36],[35,"Identified",156]].forEach(function(v,i){
+  var bh=(v[0]/35)*78,x=v[2];
+  pSvg.appendChild(S("rect",{class:"gy",style:"--d:"+(i+1),x:x,y:102-bh,width:68,height:bh,rx:5,fill:i?"var(--acc)":"var(--rule)"}));
+  pSvg.appendChild(S("text",{class:"pop",style:"--d:"+(i+3),x:x+34,y:96-bh,"text-anchor":"middle","font-size":"20","font-family":"Instrument Serif,serif",text:"$"+v[0]+"M"}));
+  pSvg.appendChild(S("text",{class:"m",x:x+34,y:120,"text-anchor":"middle",text:v[1]}));
+ });
+ pSvg.appendChild(S("text",{class:"pop",style:"--d:5;fill:var(--hot)",x:126,y:44,"text-anchor":"middle","font-size":"14","font-weight":"700",text:"+133%"}));
+ $("recPipe").appendChild(pSvg);
+
+ /* Donut at 80% self-sourced + Gauge at 117% of USD 1.5M target */
+ var dSvg=S("svg",{viewBox:"0 0 130 124",role:"img"});
+ dSvg.appendChild(S("title",{text:"80% self-sourced identified pipeline"}));
+ dSvg.appendChild(S("circle",{cx:65,cy:62,r:44,fill:"none",stroke:"var(--rule)","stroke-width":12}));
+ dSvg.appendChild(S("circle",{class:"drw",pathLength:"100",style:"--to:20",cx:65,cy:62,r:44,fill:"none",stroke:"var(--acc)","stroke-width":12,transform:"rotate(-90 65 62)"}));
+ dSvg.appendChild(S("text",{x:65,y:68,"text-anchor":"middle","font-size":"26","font-family":"Instrument Serif,serif",text:"80%"}));
+ dSvg.appendChild(S("text",{class:"m",x:65,y:84,"text-anchor":"middle","font-size":"10",text:"self-sourced"}));
+
+ var gSvg=S("svg",{viewBox:"0 0 140 124",role:"img"});
+ gSvg.appendChild(S("title",{text:"117% of USD 1.5M annual target"}));
+ var arcPath="M18,96 A52,52 0 0 1 122,96";
+ gSvg.appendChild(S("path",{d:arcPath,fill:"none",stroke:"var(--rule)","stroke-width":12,"stroke-linecap":"round"}));
+ gSvg.appendChild(S("path",{class:"drw",pathLength:"100",style:"--to:22",d:arcPath,fill:"none",stroke:"var(--acc)","stroke-width":12,"stroke-linecap":"round"}));
+ gSvg.appendChild(S("text",{x:70,y:92,"text-anchor":"middle","font-size":"26","font-family":"Instrument Serif,serif",text:"117%"}));
+ gSvg.appendChild(S("text",{class:"m",x:70,y:112,"text-anchor":"middle","font-size":"10",text:"of $1.5M target"}));
+ $("recDonutGauge").appendChild(dSvg);
+ $("recDonutGauge").appendChild(gSvg);
+
+ /* Coverage graphic: 50 small dots (integrators) and 2 larger dots (distributors) */
+ var cSvg=S("svg",{viewBox:"0 0 280 112",role:"img"});
+ cSvg.appendChild(S("title",{text:"Coverage graphic of 50 system integrators and 2 value-added distributors"}));
+ for(var i=0;i<50;i++){
+  var col=i%10,row=Math.floor(i/10);
+  cSvg.appendChild(S("circle",{class:"pop",style:"--d:"+(i/4),cx:14+col*20,cy:16+row*19,r:4.5,fill:"var(--acc)"}));
+ }
+ cSvg.appendChild(S("circle",{class:"pop",style:"--d:14",cx:244,cy:36,r:12,fill:"var(--hot)"}));
+ cSvg.appendChild(S("circle",{class:"pop",style:"--d:16",cx:244,cy:74,r:12,fill:"var(--hot)"}));
+ cSvg.appendChild(S("text",{class:"m",x:244,y:104,"text-anchor":"middle","font-size":"10.5",text:"2 VADs"}));
+ $("recDots").appendChild(cSvg);
+})();
+
+/* ---------- 12 QUESTIONS ---------- */
+[
+ "How is territory split between this role and Cloud Distribution's team?",
+ "Is the Cloud Distribution agreement exclusive?",
+ "What does the current Saudi pipeline look like?",
+ "How are quota and commission set for partner-sourced versus direct deals?",
+ "What hosting options can we offer Saudi customers?",
+ "Is there an Arabic interface or documentation, and which regional references can I use?"
+].forEach(function(q,i){
+ $("qsList").appendChild(h("div",{class:"q r",style:"--d:"+(i+2),text:q}));
+});
+
+/* ---------- 13 SOURCES ---------- */
+[
+ ["S1","NCA ECC-2:2024 (nca.gov.sa) — Control 2-2-3-2 (MFA for remote & privileged access) and Control 2-2-3-4 (PAM)."],
+ ["S2","NCA Critical Systems Cybersecurity Controls (nca.gov.sa) — Controls 2-2-1-1, 2-2-1-3, 2-2-1-4."],
+ ["S3","SDAIA PDPL guidance — biometric data as sensitive personal data; explicit consent or narrow legal basis plus impact assessment."],
+ ["S4","SAMA Cybersecurity Framework — MFA expectations for remote and privileged access [To verify]."],
+ ["S5","BIO-key press release via GlobeNewswire / bio-key.com, 19 May 2025 — Cloud Distribution Co. (Ideal Group) appointed Saudi VAD & Channel Alliance Partner."],
+ ["S6","BIO-key press release via bio-key.com, Nov 2025 — Middle East defence-sector deployment via Cloud Distribution; Defense & Intelligence Cybersecurity Initiative (>USD 2M sales in 12 months to Mar 2026)."],
+ ["S7","BIO-key press release via GlobeNewswire / bio-key.com, 28 Jul 2026 — Central Bank of Jordan national biometric authentication initiative."],
+ ["S8","BIO-key press release via GlobeNewswire / bio-key.com, 6 Aug 2026 — Maktabi Tech partnership for Saudi education-sector identity security."],
+ ["S9","BIO-key press release via GlobeNewswire / bio-key.com, 23 Sep 2026 — Passkey:YOU receives FIDO Alliance full certification."],
+ ["S10","BIO-key press release via bio-key.com, 29 Sep 2026 — Al Majlis Group strategic advisory partnership for UAE and Saudi Arabia."],
+ ["S11","BIO-key press release via GlobeNewswire / bio-key.com, 13 Oct 2026 — Middle East government security agency selects MFA & SSO with IT Harmony (<2 months); new President of PortalGuard appointed."],
+ ["S12","BIO-key press release via bio-key.com, 22 Oct 2026 — Gulf national-government institution deploys passwordless biometrics with VaporVM (7th new Gulf customer in six months)."],
+ ["S13","PeerSpot IAM mindshare data, Apr 2026 (Microsoft Entra 16.8%, Okta 8.9%)."],
+ ["S14","Ingram Micro Saudi announcement on adding Okta; Microsoft Entra Saudi cloud region slated for Q4 2026; Axidian NCA ECC-2:2024 marketing."],
+ ["S15","Black Hat MEA coverage of CyberArk, Nov 2024 (Saudi ~40% of Middle East business in 2024)."],
+ ["S16","Saviynt release, 1 Oct 2026 — KSA data residency launch on Google Cloud Dammam."],
+ ["S17","Asharq Al-Awsat and Arab News, Feb 2026 — regional-HQ rules since early 2024, Etimad exemption route, and >700 firms with Saudi RHQs."],
+ ["S18","Clyde & Co on Saudi local content and new Government Tenders and Procurement Law approved 5 Aug 2026, Sep 2026."]
+].forEach(function(s){
+ $("srcList").appendChild(h("div",{class:"src"},h("span",{class:"id",text:s[0]}),h("div",{text:s[1]})));
+});
+
+/* ---------- NAV, RAIL, PRESENT MODE, LASER, REVEAL ---------- */
+secs.forEach(function(s,i){
+ var b=h("button",{type:"button","aria-label":"Go to "+s.dataset.name,onclick:function(){go(i)}},
+  h("span",{text:String(i+1).padStart(2,"0")+" "+s.dataset.name}),
+  h("i")
+ );
+ railB.push(b);
+ $("rail").appendChild(b);
+
+ var pd=h("button",{type:"button","aria-label":"Slide "+(i+1)+": "+s.dataset.name,onclick:function(){go(i)}});
+ pdotB.push(pd);
+ $("pdots").appendChild(pd);
+});
+
+setLens("commercial");
+
+var deckMQ=window.matchMedia("(min-width:900px) and (min-height:600px)");
+function fitAll(){
+ secs.forEach(function(s){
+  var w=s.querySelector(".wrap");
+  if(!w)return;
+  w.style.transform="";
+  if(!deckMQ.matches&&!document.body.classList.contains("present"))return;
+  var cs=getComputedStyle(s);
+  var av=s.clientHeight-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom);
+  if(av<=0||w.offsetHeight<=0)return;
+  var k=Math.min(1,av/w.offsetHeight);
+  if(k<0.995)w.style.transform="scale("+k.toFixed(4)+")";
+ });
+}
+var rt=null;
+window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(function(){fitAll();go(cur,true)},120)});
+
+function count(el){
+ if(el._done)return;
+ el._done=1;
+ var to=+el.dataset.count,p=el.dataset.prefix||"",s=el.dataset.suffix||"";
+ if(reduce){el.textContent=p+to+s;return}
+ var t0=performance.now(),D=1300;
+ (function f(now){
+  var k=Math.min(1,(now-t0)/D),e=1-Math.pow(1-k,4);
+  el.textContent=p+Math.round(to*e)+s;
+  if(k<1)requestAnimationFrame(f);
+ })(t0);
+}
+
+var io=new IntersectionObserver(function(es){
+ es.forEach(function(e){
+  if(e.isIntersecting){
+   e.target.classList.add("in");
+   e.target.querySelectorAll("[data-count]").forEach(count);
+  }
+ });
+},{threshold:.15});
+secs.forEach(function(s){io.observe(s)});
+
+var co=new IntersectionObserver(function(es){
+ if(document.body.classList.contains("present"))return;
+ es.forEach(function(e){
+  if(e.isIntersecting){
+   var i=secs.indexOf(e.target);
+   if(i!==cur){cur=i;sync()}
+  }
+ });
+},{threshold:.52});
+secs.forEach(function(s){co.observe(s)});
+
+function sync(){
+ railB.forEach(function(b,i){b.setAttribute("aria-current",i===cur?"true":"false")});
+ pdotB.forEach(function(d,i){d.setAttribute("aria-current",i===cur?"true":"false")});
+ secs.forEach(function(s,i){s.classList.toggle("p-active",i===cur)});
+ $("wNo").textContent=String(cur+1).padStart(2,"0")+" / "+secs.length;
+ $("wName").textContent=secs[cur].dataset.name;
+ $("wBar").style.transform="scaleX("+((cur+1)/secs.length)+")";
+ if(document.body.classList.contains("present")){
+  secs[cur].classList.add("in");
+  secs[cur].querySelectorAll("[data-count]").forEach(count);
+  fitAll();
+ }
+}
+
+function go(i,instant){
+ i=Math.max(0,Math.min(secs.length-1,i));
+ cur=i;
+ sync();
+ if(!document.body.classList.contains("present")){
+  secs[i].scrollIntoView({behavior:(reduce||instant)?"auto":"smooth",block:"start"});
+ }
+}
+$("prev").addEventListener("click",function(){go(cur-1)});
+$("next").addEventListener("click",function(){go(cur+1)});
+
+/* Present mode */
+var presBtn=$("presentBtn");
+function togglePresent(force){
+ var on=typeof force==="boolean"?force:!document.body.classList.contains("present");
+ document.body.classList.toggle("present",on);
+ presBtn.setAttribute("aria-pressed",on?"true":"false");
+ if(on){
+  if(document.documentElement.requestFullscreen&&!document.fullscreenElement){
+   document.documentElement.requestFullscreen().catch(function(){});
+  }
+  sync();
+ }else{
+  if(document.fullscreenElement&&document.exitFullscreen){
+   document.exitFullscreen().catch(function(){});
+  }
+  fitAll();
+  secs[cur].scrollIntoView({behavior:"auto",block:"start"});
+ }
+}
+presBtn.addEventListener("click",function(){togglePresent()});
+
+/* Touch swipe in present mode */
+var tx0=null,ty0=null;
+document.addEventListener("touchstart",function(e){if(e.touches.length===1){tx0=e.touches[0].clientX;ty0=e.touches[0].clientY}},{passive:true});
+document.addEventListener("touchend",function(e){
+ if(tx0===null||!document.body.classList.contains("present"))return;
+ var dx=e.changedTouches[0].clientX-tx0,dy=e.changedTouches[0].clientY-ty0;
+ if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){
+  if(dx<0)go(cur+1);else go(cur-1);
+ }
+ tx0=null;ty0=null;
+},{passive:true});
+
+/* Pointer (laser) mode */
+var lz=$("laser"),lb=$("laserBtn");
+function laser(){var on=document.body.classList.toggle("laser");lb.setAttribute("aria-pressed",on?"true":"false")}
+lb.addEventListener("click",laser);
+document.addEventListener("mousemove",function(e){if(document.body.classList.contains("laser"))lz.style.transform="translate("+e.clientX+"px,"+e.clientY+"px)"});
+document.addEventListener("mousedown",function(e){if(!document.body.classList.contains("laser")||reduce)return;var r=h("div",{class:"ripple",style:"left:"+e.clientX+"px;top:"+e.clientY+"px"});document.body.appendChild(r);setTimeout(function(){r.remove()},750)});
+
+document.addEventListener("keydown",function(e){
+ var k=e.key;
+ if(e.target&&/INPUT|TEXTAREA/.test(e.target.tagName))return;
+ if(e.ctrlKey||e.metaKey||e.altKey)return;
+ if(k==="Escape"&&document.body.classList.contains("present")){e.preventDefault();togglePresent(false);return}
+ if(k==="ArrowRight"||k==="ArrowDown"||k==="PageDown"){e.preventDefault();go(cur+1)}
+ else if(k==="ArrowLeft"||k==="ArrowUp"||k==="PageUp"){e.preventDefault();go(cur-1)}
+ else if(k==="Home"){e.preventDefault();go(0)}
+ else if(k==="End"){e.preventDefault();go(secs.length-1)}
+ else if(k==="l"||k==="L"){laser()}
+ else if(k==="p"||k==="P"){togglePresent()}
+});
+
+fitAll();
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fitAll);
+window.addEventListener("load",fitAll);
+sync();
+})();
+</script>
+</body>
+</html>
